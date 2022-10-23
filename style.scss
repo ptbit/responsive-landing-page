@@ -1,4 +1,5 @@
 $font_color1: #00bb92;
+$font_color2: #666666;
 
 
 html,body {
@@ -10,7 +11,6 @@ html,body {
 .wraper{
   margin: 50px;
   background-color: #EFF0F1;
-  height: 500px;
   border-radius: 10px;
 }
 header{
@@ -18,13 +18,97 @@ header{
 
   h1{
     text-align: center;
-    color: #000;
+    color: $font_color2;
   }
 }
 form{
+
   background-color: #fdfdfd;
+  padding: 20px;
+
+  label{
+    color: $font_color1;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .row{
+    display: flex;
+    .item{
+      width: 50%;
+      padding: 10px 20px;
+      .range{
+        display: flex;
+      }
+      select{
+        width: 100%;
+        padding: 5px;
+        border-radius: 5px;
+        border: 2px solid #cccccc;
+        font-size: 18px;
+        background-color: white;
+        color: $font_color2;
+      }
+      textarea{
+        width: 100%;
+        height: 100px;
+        border-radius: 5px;
+        border: 2px solid #cccccc;
+      }
+    }
+    label{
+      display: block;
+    }
+    input{
+      width: 100%;
+      padding: 5px;
+      border-radius: 5px;
+      border: 2px solid #cccccc;
+      font-size: 18px;
+    }
+    .file{
+      border: 0px;
+    }
+    .item_email{
+      width: 100%;
+      padding: 10px 20px;
+    }
+  }
+
+  .row_choice{
+    display: flex;
+    .item{
+      width: 50%;
+      padding: 10px 20px;
+      label{
+        display: block;
+      }
+      .label2{
+        display: inline;
+        color: $font_color2;
+        font-weight: normal;
+      }
+      .checkGroup{
+        display: flex;
+        justify-content: space-between;
+        
+      }
+      input{
+        cursor: pointer;
+      }
+    }
+  }
   
 }
+
+input::-webkit-input-placeholder {
+  color: #ccc;
+ } 
+input::-moz-placeholder {
+  color: #ccc;
+  font-size: 20px;
+ }
+
+
 footer{
   display: flex;
   flex-direction: row;
@@ -32,8 +116,11 @@ footer{
 
   button{
     padding: 10px;
-    margin-top: 5px;
+    margin-top: 10px;
     margin-right: 5%;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 button{
@@ -43,4 +130,6 @@ button{
   color: white;
   font-weight: 500;
   font-size: 20px;
+  cursor: pointer;
+  margin-left: 5px;
 }
