@@ -2,59 +2,104 @@ html,body {
   height: 100%;
   margin: 0px;
   padding: 0px;
-  background-color: #EFEFEF;
-  font-size: 20px;
-  font-family: 'Roboto', sans-serif;
+  --main-color: rgb(245, 221, 11);
 }
 .container
 {
-  background-color: grey;
+  background-color: rgb(69, 57, 180);
   margin: 0 auto;
-  width: 50%;
+  width: 1000px;
   height: 100%;
   display: flex;
   flex-direction: row;
   justify-content: center;
-
 }
 .animation{
-  margin: 20px;;
-  background-color: rgb(76, 66, 173);
-  height: 100px;
+  padding: 20px;
+  background-color: rgb(113, 100, 235);
+  height: 160px;
   flex-grow: 1;
   align-self: center;
   padding-left: 20px;
-  /* position: relative; */
-  
-}
-.pac{
-  /* background-color: rgb(214, 228, 20); */
-  
-  margin-top: 30px;
-  width: 1px;
-  border: 40px solid yellow;
-  border-radius: 50%;
   position: relative;
-  left: 0px;
-  
-  border-right: 40px solid transparent;
+}
+.pacman {
+  position: relative;
+  width: 160px;
+  height: 160px;
+}
 
-  /* animation: pacman;
-  animation-duration: 4s;
-  animation-iteration-count: infinite;
-} */
+.pacman:before, .pacman:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 0;
+  border: 80px solid var(--main-color);
+  border-radius: 50%;
+  border-right: 80px solid transparent;
+  animation: pacmanUp linear 1s infinite;
+}
 
-@keyframes pacman {
-  0%{
-    left: 0px;
-    border-right: 40px solid transparent
-  }
-  50%{
-    /* left: calc(100% - 60px); */
-    border-right: 40px solid yellow;
-  }
-  100%{
-    left: 0px;
-    border-right: 40px solid transparent;
-  }
+.pacman:after {
+  animation: pacmanDown linear 1s infinite;
+}
+
+@keyframes pacmanUp {
+  0% {transform: rotate(270deg);}
+  50% {transform: rotate(360deg);}
+  100% {transform: rotate(270deg);}
+}
+
+@keyframes pacmanDown {
+  0% {transform: rotate(90deg);}
+  50% {transform: rotate(0deg);}
+  100% {transform: rotate(90deg);}
+}
+.circles{
+  width: 20px;
+  height: 20px;
+  background-color: var(--main-color);
+  border-radius: 50%;
+  position: absolute;
+  top: 90px;
+}
+
+.circle1 {
+  left: 240px;
+  animation: fly1 linear 1s infinite;
+}
+@keyframes fly1 {
+  0% {left:240px;}
+  100% {left:140px;}
+}
+
+.circle2 {
+  left: 340px;
+  animation: fly2 linear 1s infinite;
+}
+@keyframes fly2 {
+  0% {left:340px;}
+  100% {left:240px;}
+}
+
+.circle3 {
+  left: 440px;
+  animation: fly3 linear 1s infinite;
+}
+@keyframes fly3 {
+  0% {left:440px;}
+  100% {left:340px;}
+}
+
+.circle4 {
+  left: 540px;
+  width: 20px;
+  animation: fly4 linear 1s infinite;
+}
+@keyframes fly4 {
+  0% {left:540px;}
+  100% {left:440px;}
 }
