@@ -67,27 +67,27 @@ html,body {
 
 .circle-1 {
   left: 240px;
-  animation: fly1 linear 1s infinite;
+  animation: fly-1 linear 1s infinite;
 }
-@keyframes fly1 {
+@keyframes fly-1 {
   0% {left:240px;}
   100% {left:140px;}
 }
 
 .circle-2 {
   left: 340px;
-  animation: fly2 linear 1s infinite;
+  animation: fly-2 linear 1s infinite;
 }
-@keyframes fly2 {
+@keyframes fly-2 {
   0% {left:340px;}
   100% {left:240px;}
 }
 
 .circle-3 {
   left: 440px;
-  animation: fly3 linear 1s infinite;
+  animation: fly-3 linear 1s infinite;
 }
-@keyframes fly3 {
+@keyframes fly-3 {
   0% {left:440px;}
   100% {left:340px;}
 }
@@ -95,9 +95,9 @@ html,body {
 .circle-4 {
   left: 540px;
   width: 20px;
-  animation: fly4 linear 1s infinite;
+  animation: fly-4 linear 1s infinite;
 }
-@keyframes fly4 {
+@keyframes fly-4 {
   0% {left:540px;}
   100% {left:440px;}
 }
