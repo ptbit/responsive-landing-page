@@ -43,3 +43,9 @@ h1 {
   width: 100%;
   height: 1700px;
 }
+section{
+  margin-bottom: 1700px;
+}
+section:last-child{
+  margin-bottom: 0;
+}
