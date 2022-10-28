@@ -22,43 +22,92 @@ h1 {
 }
 .container{
   height: 100vh;
-  overflow-y: auto;
   overflow-x: hidden;
-  perspective: 10px;
+  perspective: 2px;
 }
-.season{
+section{
   position: relative;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
   transform-style: preserve-3d;
 }
-.front{
-  z-index: -1;
-  transform: translateZ(-10px) scale(2);
-}
-.back{
-  z-index: 0;
-  transform: translateZ(-7px) scale(1.7);
-}
-
-section{
-  margin-bottom: 650px;
+.winter::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateZ(-1px) scale(1);
   background-size: cover;
-}
-section:last-child{
-  margin-bottom: 0;
-}
-section:nth-child(1){
+  z-index: -1;
   background-image: var(--winter);
 }
-section:nth-child(2){
+.spring::after{
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateZ(-1px) scale(1);
+  background-size: cover;
+  z-index: -1;
   background-image: var(--spring);
 }
-section:nth-child(3){
+.summer::after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateZ(-1px) scale(1);
+  background-size: cover;
+  z-index: -1;
   background-image: var(--summer);
 }
-section:nth-child(4){
+.autumn::after{
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateZ(-1px) scale(1);
+  background-size: cover;
+  z-index: -1;
   background-image: var(--autumn);
 }
+
+
+
+
+
+
+
+
+
+/* 
+section:nth-child(1)::after{
+  background-image: var(--winter);
+  z-index: -1;
+  transform: translateZ(-3px) scale(2);
+}
+section:nth-child(2)::after{
+  background-image: var(--spring);
+  z-index: 3;
+  transform: translateZ(-3px) scale(2);
+}
+section:nth-child(3)::after{
+  background-image: var(--summer);
+  z-index: -3;
+  transform: translateZ(-2px) scale(2);
+}
+section:nth-child(4)::after{
+  background-image: var(--autumn);
+  z-index: 0;
+  transform: translateZ(-3px) scale(2);
+} */
