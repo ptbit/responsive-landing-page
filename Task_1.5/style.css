@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+:root {
+  --winter: url("https://media.cntraveler.com/photos/5eb553ca19a3d1d15f47c180/16:9/w_2560%2Cc_limit/WinterTravel-2020-GettyImages-899427986.jpg");
+  --spring: url("https://res.cloudinary.com/dk-find-out/image/upload/q_80,w_1920,f_auto/MA_00031467_hrit6x.jpg");
+  --summer: url("https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/beautiful-tropical-sunset-scenery-two-sun-beds-royalty-free-image-1595368231.jpg");
+  --autumn: url("https://blog.cwf-fcf.org/wp-content/uploads/2020/10/autumn-park-leaves-sun-1053614486.jpg");
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-size: 7rem;
+  color: white;
+  text-shadow: 0 0 5px black;
+  z-index: 10
+}
+.container{
+  height: 100vh;
+  overflow-x: hidden;
+  perspective: 300px;
+}
+section{
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+}
+
+section:nth-child(1), section:nth-child(3){
+  z-index: -1;
+}
+section:nth-child(2), section:nth-child(4){
+  z-index: 0;
+}
+.season::after{
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-size: cover;
+}
+.winter::after{
+  transform: translateZ(-300px) scale(2);
+  background-image: var(--winter);
+  left: -5px;
+}
+.spring::after{
+  transform: translateZ(0);
+  background-image: var(--spring);
+}
+.summer::after{
+  transform: translateZ(-300px) scale(2);
+  background-image: var(--summer);
+  left: -5px;
+}
+.autumn::after{
+  transform: translateZ(0);
+  background-image: var(--autumn);
+}
+.text{
+  transform: translateZ(90px) scale(.7);
+}
