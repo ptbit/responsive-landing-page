@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <link rel="stylesheet" href="style.css">
+  <title>Task_1.3</title>
+</head>
+<body>
+  <div class="wraper">
+    <header>
+      <h1>Create Account</h1>
+    </header>
+    <form>
+      <div class="row">
+        <div class="item">
+          <label>First name*</label>  
+          <input type="text" placeholder="enter your first name">
+        </div>
+        <div class="item">
+          <label>Last name</label>
+          <input type="text" placeholder="enter your last name">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="item_email">
+          <label>Email*</label>  
+          <input type="email" placeholder="enter your email">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="item">
+          <label>Password*</label>  
+          <input type="password" placeholder="enter your password">
+        </div>
+        <div class="item">
+          <label>Confirm Pasword*</label>
+          <input type="password" placeholder="enter your password again">
+        </div>
+      </div>
+
+      <div class="row_choice">
+        <div class="item">
+          <label>Gender:</label>
+          <input type="radio" id="genderChoice1" name="gender" value="male">
+            <label class="label2" for="genderChoice1">Male</label>
+          <input type="radio" id="genderChoice2" name="gender" value="female">
+            <label class="label2" for="genderChoice2">Female</label>
+        </div>
+        <div class="item">
+          <label>Hobies:</label>
+          <div class="checkGroup">
+            <div class="checkItem">
+              <input type="checkbox" name="Music">
+              <label class="label2" for="Music">Music</label>
+            </div>
+            <div class="checkItem">
+              <input type="checkbox" name="Sports">
+              <label class="label2" for="Sports">Sports</label>
+            </div>
+            <div class="checkItem">
+              <input type="checkbox" name="Travel">
+              <label class="label2" for="Travel">Travel</label>
+            </div>
+            <div class="checkItem">
+              <input type="checkbox" name="Movies">
+              <label class="label2" for="Movies">Movies</label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row" >
+        <div class="item">
+          <label>Source of Income*</label>  
+          <select >
+            <option value="Commission">Commission</option>
+            <option value="Gifts">Gifts</option>
+            <option value="Salary">Salary</option>
+            <option value="Employed" selected>Employed</option>
+          </select>
+        </div>
+        <div class="item">
+          <label>Income</label>
+          <div class="range">
+            <input type="range" min = "0" max = "100" value = "0">
+            <button>20K</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row">
+        <div class="item">
+          <label>Upload Profile Picture</label>  
+          <input class="file" type="file">
+        </div>
+        <div class="item">
+          <label>Age</label>
+          <input type="number" placeholder="enter your age" value="18">
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="item" style="width: 100%;">
+          <label>Bio</label>  
+        
+        <textarea> </textarea>
+      </div>
+      </div>
+      
+    </form>
+    <footer>
+      <button type="submit" >Create</button>
+    </footer>
+  </div>
+</body>
+</html>
