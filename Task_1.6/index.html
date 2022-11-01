@@ -10,76 +10,59 @@
 <body>
   <div class="wrapper">
     <div class="nav">
-      <h2>css властивість display</h2>
+      <a href="/Task_1.6">
+      <h1>CSS display Property</h1>
+      </a>
       <ul>
-        <li>block1</li>
+        <li><a href="#inline">Inline</a></li>
+        <li><a href="#block">Block</a></li>
+        <li><a href="#contents">Contents</a></li>
+        <li><a href="#flex">Flex</a></li>
+        <li><a href="#grid">Grid</a></li>
+        <li><a href="#inline-block">Inline-block</a></li>
+        <li><a href="#inline-flex">Inline-flex</a></li>
+        <li><a href="#inline-grid">Inline-grid</a></li>
+        <li><a href="#inline-table">Inline-table</a></li>
       </ul>
     </div>
+    
     <div class="content">
-      <h2>Властивість display може отримувати 20 значень:</h2>
+      <h2>Property Values:</h2>
+        <div class="border">
+          display: <i>value</i>;
+        </div>
+
         <hr>
-        <h3>block</h3>
-          Елемент показується як блоковий. Вказавши це значення для елемента <span class="code">&lt;span&gt;</span> - він почне вести себе як блоковий, тобто, його вміст буде завжди починатися з нового рядка.
+          <h3 id="inline">inline</h3>
+          Displays an element as an inline element (like &lt;span&gt;). Any height and width properties will have no effect
         <hr>
-        <h3>inline</h3>
-          Елемент відображається як рядковий ( <span class="code">&lt;span&gt;</span> ). Значення inline скасовує особливість блокових елементів завжди починатися з нового рядка.
+          <h3 id="block">block</h3>
+          Displays an element as a block element (like &lt;p&gt;). It starts on a new line, and takes up the whole width
         <hr>
-        <h3>inline-block</h3>
-          Це значення створює блоковий елемент, який поводить себе подібно рядковому елементу. Його внутрішня частина форматується як у блокового елемента, а сам елемент - як рядковий. Так себе поводить елемент <span class="code">&lt;img&gt;</span>.
-          <hr>
-      inline-table
-      
-          Визначає, що елемент є таблицею <table> , але при цьому таблиця поводить себе як рядковий елемент і обтікається іншими елементами.
-      inline-flex
-      
-          Елемент поводиться як рядковий і викладає вміст згідно флекс-моделі. З'явився тільки у CSS3.
-      flex
-      
-          Елемент поводиться як блоковий і викладає вміст згідно флекс-моделі
-      list-item
-      
-          Елемент поводить себе так само як елемент .
-      none
-      
-          Приховує елемент. Макет формується, немов елемента і не було. Зробити видимим елемент можна за допомогою скриптів. При цьому відбувається переформатування даних на сторінці з урахуванням знову доданого елемента.
-      run-in
-      
-          Встановлює елемент як блоковий або рядковий залежно від контексту.
-      table
-      
-          Надає елементу елементу якостей таблиці <table>.
-      table-caption
-      
-          Задає заголовок таблиці подібно застосуванню <caption>
-      table-cell
-      
-          Вказує, що елемент являє собою елемент таблиці (<td> або <th>)
-      table-column-group
-      
-          Елемент поводить себе ніби він елемент <colgroup>.
-      table-column
-      
-          Елемент поводить себе ніби він елемент <col>.
-      table-footer-group
-      
-          Використовується для зберігання однієї або декількох рядків комірок, які відображаються в самому низу таблиці. За своєю дією схожий з роботою <tfoot>
-      table-header-group
-      
-          Елемент призначений для зберігання одного чи кількох рядків комірок, які представлені у верхній частині сторінки. За своєю дією схожий з роботою <thead>
-      table-row
-      
-          Елемент відображається як рядок таблиці <tr>
-      table-row-group
-      
-          Елемент аналогічний дії елемента <tbody>.
-      initial
-      
-          Встановлює властивість у значення без задання
-      inherit
-      
-          Вказує на спадковість властивості від свого батьківського елемента
-      
-      
+          <h3 id="contents">contents</h3>
+          Makes the container disappear, making the child elements children of the element the next level up in the DOM
+        <hr>
+          <h3 id="flex">flex</h3>
+          Displays an element as a block-level flex container
+        <hr>
+          <h3 id="grid">grid</h3>
+          Displays an element as a block-level grid container
+        <hr>
+          <h3 id="inline-block">inline-block</h3>
+          Displays an element as an inline-level block container. The element itself is formatted as an inline element, but you can apply height and width values
+        <hr>
+          <h3 id="inline-flex">inline-flex</h3>
+          Displays an element as an inline-level flex container
+        <hr>
+          <h3 id="inline-grid">inline-grid</h3>
+          Displays an element as an inline-level grid container
+        <hr>
+          <h3 id="inline-table">inline-table</h3>
+          The element is displayed as an inline-level table
+        <hr>
+
+
+        
     </div>
   </div>
 </body>
