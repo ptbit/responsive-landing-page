@@ -7,7 +7,7 @@ html, body {
 .wrapper{
   display: flex;
 }
-.nav{
+aside{
   flex-basis: 20%;
   padding: 0 10px;
   height: 100%;
@@ -21,17 +21,9 @@ h1, ul{
 .content{
   background-color: #f5f5f5;
   flex-basis: 80%;
-  padding: 0 10px;
   font-size: 20px;
   padding: 10px;
   color: #333333;
-}
-.code{
-  padding: 2px 4px;
-  font-size: 90%;
-  color: #c7254e;
-  background-color: #f9f2f4;
-  border-radius: 4px;
 }
 hr{
   color: white;
@@ -39,13 +31,6 @@ hr{
 ul{
   list-style: none;
   padding: 0px;
-}
-.border{
-  font-size: 19px;
-  border: 1px solid #ccc;
-  background-color: #fff;
-  color: #000;
-  padding: 8px 12px;
 }
 a{
   text-decoration: none;
