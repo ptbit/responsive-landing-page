@@ -44,6 +44,6 @@ h3{
   border-top: 1px solid grey;
   padding-top: 5px;
 }
-#inline{
+h3:first-of-type{
   border-top: 0;
 }
