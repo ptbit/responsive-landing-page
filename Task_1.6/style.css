@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #f1f1f1;
+  
+}
+.wrapper{
+  display: flex;
+  flex-direction: row;
+  /* position: relative; */
+}
+.nav{
+  flex-basis: 20%;
+  padding: 0 10px;
+  /* height: 500px; */
+  min-width: 260px;
+  position: sticky;
+  top: 0;
+  /* background-color: #f1f1f1; */
+}
+.content{
+  background-color: #f5f5f5;
+  flex-basis: 80%;
+  padding: 0 10px;
+  height: 1500px;
+  font-size: 20px;
+  padding: 10px;
+  color: #333333;
+
+}
+.code{
+  padding: 2px 4px;
+  font-size: 90%;
+  color: #c7254e;
+  background-color: #f9f2f4;
+  border-radius: 4px;
+}
