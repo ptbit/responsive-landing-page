@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body{
+background-color: #ccc;
+}
+.slider{
+  background-color: rgba(124, 121, 121, 0.815);
+  width: 1100px;
+  height: 600px;
+  overflow: hidden;
+  border: 10px solid white;
+}
+.middle{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.navigation{
+  position: absolute;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+.bar{
+  height: 10px;
+  width: 10px;
+  margin: 6px;
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid white;
+  opacity: 0.8;
+  border-radius: 10px;
+  transition: all 0.4s ease;
+}
+/* .bar:hover{
+  opacity: 1;
+  transform: scale(1.2);
+  background-color: white;
+} */
+input[name='r']{
+  visibility: hidden;
+  position: absolute;
+}
+.slides{
+  width: 400%;
+  height: 100%;
+  display: flex;
+}
+.slide{
+  width: 25%;
+  transition: all 0.6s ease;
+}
+.slide img{
+  width: 100%;
+  height: 100%;
+}
+#r1:checked ~ .s1{
+  margin-left: 0;
+}
+#r2:checked ~ .s1{
+  margin-left: -25%;
+}
+#r3:checked ~ .s1{
+  margin-left: -50%;
+}
+#r4:checked ~ .s1{
+  margin-left: -75%;
+}
+
+#r1:checked ~ * .b1{
+  background-color: white;
+}
+#r2:checked ~ * .b2{
+  background-color: white;
+}
+#r3:checked ~ * .b3{
+  background-color: white;
+}
+#r4:checked ~ * .b4{
+  background-color: white;
+}
+.left_btn{
+  height: 100%;
+  width: 100px;
+  position: absolute;
+  left: 0;
+  display: flex;
+}
+.left{
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  opacity: .4;
+  transition: all 0.3s ease;
+  visibility: hidden;
+  position: absolute;
+}
+.l1{
+  background-image: url("./leftarrow.png");
+}
+.l2{
+  background-image: url("./leftarrow.png");
+}
+.l3{
+  background-image: url("./leftarrow.png");
+}
+.l4{
+  background-image: url("./leftarrow.png");
+}
+
+.l1:hover, .l2:hover, .l3:hover, .l4:hover{
+  opacity: .7;
+  transition: all 0.3s ease;
+}
+#r1:checked ~ * .l4{
+  visibility: visible;
+}
+#r2:checked ~ * .l1{
+  visibility: visible;
+}
+#r3:checked ~ * .l2{
+  visibility: visible;
+}
+#r4:checked ~ * .l3{
+  visibility: visible;
+}
+.right_btn{
+  height: 100%;
+  width: 100px;
+  position: absolute;
+  right: 0;
+  display: flex;
+}
+.right{
+  cursor: pointer;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  opacity: .4;
+  transition: all 0.3s ease;
+  visibility: hidden;
+  position: absolute;
+}
+.r1{
+  background-image: url("./rightarrow.png");
+}
+.r2{
+  background-image: url("./rightarrow.png");
+}
+.r3{
+  background-image: url("./rightarrow.png");
+}
+.r4{
+  background-image: url("./rightarrow.png");
+}
+.r1:hover, .r2:hover, .r3:hover, .r4:hover{
+  opacity: .7;
+  transition: all 0.3s ease;
+}
+#r1:checked ~ * .r2{
+  visibility: visible;
+}
+#r2:checked ~ * .r3{
+  visibility: visible;
+}
+#r3:checked ~ * .r4{
+  visibility: visible;
+}
+#r4:checked ~ * .r1{
+  visibility: visible;
+}
