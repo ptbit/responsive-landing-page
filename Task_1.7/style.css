@@ -18,14 +18,14 @@ background-color: #ccc;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.navigation{
+.nav_btn{
   position: absolute;
   bottom: 16px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
 }
-.bar{
+.nav{
   height: 10px;
   width: 10px;
   margin: 6px;
@@ -36,12 +36,12 @@ background-color: #ccc;
   border-radius: 10px;
   transition: all 0.4s ease;
 }
-/* .bar:hover{
+.nav:hover{
   opacity: 1;
   transform: scale(1.2);
   background-color: white;
-} */
-input[name='r']{
+}
+input{
   visibility: hidden;
   position: absolute;
 }
@@ -71,16 +71,16 @@ input[name='r']{
   margin-left: -75%;
 }
 
-#r1:checked ~ * .b1{
+#r1:checked ~ * .n1{
   background-color: white;
 }
-#r2:checked ~ * .b2{
+#r2:checked ~ * .n2{
   background-color: white;
 }
-#r3:checked ~ * .b3{
+#r3:checked ~ * .n3{
   background-color: white;
 }
-#r4:checked ~ * .b4{
+#r4:checked ~ * .n4{
   background-color: white;
 }
 .left_btn{
@@ -100,21 +100,9 @@ input[name='r']{
   transition: all 0.3s ease;
   visibility: hidden;
   position: absolute;
-}
-.l1{
   background-image: url("./leftarrow.png");
 }
-.l2{
-  background-image: url("./leftarrow.png");
-}
-.l3{
-  background-image: url("./leftarrow.png");
-}
-.l4{
-  background-image: url("./leftarrow.png");
-}
-
-.l1:hover, .l2:hover, .l3:hover, .l4:hover{
+.left:hover{
   opacity: .7;
   transition: all 0.3s ease;
 }
@@ -147,20 +135,9 @@ input[name='r']{
   transition: all 0.3s ease;
   visibility: hidden;
   position: absolute;
-}
-.r1{
   background-image: url("./rightarrow.png");
 }
-.r2{
-  background-image: url("./rightarrow.png");
-}
-.r3{
-  background-image: url("./rightarrow.png");
-}
-.r4{
-  background-image: url("./rightarrow.png");
-}
-.r1:hover, .r2:hover, .r3:hover, .r4:hover{
+.right:hover{
   opacity: .7;
   transition: all 0.3s ease;
 }
