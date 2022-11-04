@@ -1,31 +1,65 @@
 * {
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
-body{
-background-color: #ccc;
+
+html {
+  height: 100vh;
 }
-.slider{
-  background-color: rgba(124, 121, 121, 0.815);
+body {
+  height: 100%;
+}
+ol,
+li {
+  list-style: none;
+}
+.carousel {
+  position: relative;
   width: 1100px;
-  height: 600px;
-  overflow: hidden;
-  border: 10px solid white;
+  height: 750px;
+  margin: 0 auto;
+  scrollbar-color: transparent transparent;
 }
-.middle{
+.slider {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-.nav_btn{
-  position: absolute;
-  bottom: 16px;
-  left: 50%;
-  transform: translateX(-50%);
+  top: 150px;
+  right: 0;
+  bottom: 0;
+  left: 0;
   display: flex;
+  overflow-x: scroll;
+  /* scroll-behavior: smooth;
+  scroll-snap-type: x mandatory; */
 }
-.nav{
+.slide {
+  position: relative;
+  flex: 0 0 100%;
+  width: 100%;
+}
+.slide:nth-child(1) {
+  background-image: url("./assets/1.jpg");
+}
+.slide:nth-child(2) {
+  background-image: url("./assets/2.jpg");
+}
+.slide:nth-child(3) {
+  background-image: url("./assets/3.jpg");
+}
+.slide:nth-child(4) {
+  background-image: url("./assets/4.jpg");
+}
+
+.navigation {
+  position: absolute;
+  right: 0;
+  top: 680px;
+  left: 0;
+  text-align: center;
+}
+.navigation-item {
+  display: inline-flex;
+}
+.navigation-button {
   height: 10px;
   width: 10px;
   margin: 6px;
@@ -36,120 +70,28 @@ background-color: #ccc;
   border-radius: 10px;
   transition: all 0.4s ease;
 }
-.nav:hover{
+.navigation-button:hover {
   opacity: 1;
   transform: scale(1.2);
   background-color: white;
 }
-input{
-  visibility: hidden;
-  position: absolute;
-}
-.slides{
-  width: 400%;
-  height: 100%;
-  display: flex;
-}
-.slide{
-  width: 25%;
-  transition: all 0.6s ease;
-}
-.slide img{
-  width: 100%;
-  height: 100%;
-}
-#r1:checked ~ .s1{
-  margin-left: 0;
-}
-#r2:checked ~ .s1{
-  margin-left: -25%;
-}
-#r3:checked ~ .s1{
-  margin-left: -50%;
-}
-#r4:checked ~ .s1{
-  margin-left: -75%;
-}
 
-#r1:checked ~ * .n1{
-  background-color: white;
-}
-#r2:checked ~ * .n2{
-  background-color: white;
-}
-#r3:checked ~ * .n3{
-  background-color: white;
-}
-#r4:checked ~ * .n4{
-  background-color: white;
-}
-.left_btn{
-  height: 100%;
-  width: 100px;
-  position: absolute;
-  left: 0;
-  display: flex;
-}
-.left{
+.slide a {
   cursor: pointer;
   background-repeat: no-repeat;
-  background-size: cover;
   height: 100%;
-  width: 100%;
-  opacity: .4;
-  transition: all 0.3s ease;
-  visibility: hidden;
+  width: 10%;
+  opacity: 0.3;
+  transition: all 0.5s ease;
   position: absolute;
+}
+.slide .prev {
   background-image: url("./assets/leftarrow.png");
 }
-.left:hover{
-  opacity: .7;
-  transition: all 0.3s ease;
-}
-#r1:checked ~ * .l4{
-  visibility: visible;
-}
-#r2:checked ~ * .l1{
-  visibility: visible;
-}
-#r3:checked ~ * .l2{
-  visibility: visible;
-}
-#r4:checked ~ * .l3{
-  visibility: visible;
-}
-.right_btn{
-  height: 100%;
-  width: 100px;
-  position: absolute;
-  right: 0;
-  display: flex;
-}
-.right{
-  cursor: pointer;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
-  width: 100%;
-  opacity: .4;
-  transition: all 0.3s ease;
-  visibility: hidden;
-  position: absolute;
+.slide .next {
   background-image: url("./assets/rightarrow.png");
+  right: 0;
 }
-.right:hover{
-  opacity: .7;
-  transition: all 0.3s ease;
-}
-#r1:checked ~ * .r2{
-  visibility: visible;
-}
-#r2:checked ~ * .r3{
-  visibility: visible;
-}
-#r3:checked ~ * .r4{
-  visibility: visible;
-}
-#r4:checked ~ * .r1{
-  visibility: visible;
+.slide a:hover {
+  opacity: 0.9;
 }
