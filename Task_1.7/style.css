@@ -100,7 +100,7 @@ input{
   transition: all 0.3s ease;
   visibility: hidden;
   position: absolute;
-  background-image: url("./leftarrow.png");
+  background-image: url("./assets/leftarrow.png");
 }
 .left:hover{
   opacity: .7;
@@ -135,7 +135,7 @@ input{
   transition: all 0.3s ease;
   visibility: hidden;
   position: absolute;
-  background-image: url("./rightarrow.png");
+  background-image: url("./assets/rightarrow.png");
 }
 .right:hover{
   opacity: .7;
