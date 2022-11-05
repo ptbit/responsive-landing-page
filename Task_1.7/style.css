@@ -15,7 +15,6 @@ html {
   height: 80%;
   margin: 0 auto;
   scrollbar-color: transparent transparent;
-  border: 1px solid black;
 }
 *::-webkit-scrollbar {
   width: 0;
