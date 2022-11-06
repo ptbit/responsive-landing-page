@@ -27,6 +27,8 @@ html {
   left: 0;
   display: flex;
   overflow-x: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
 }
 .slide {
   position: relative;
