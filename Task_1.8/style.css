@@ -1,0 +1,118 @@
+@font-face {
+  font-family: "Objective";
+  src: url("./assets/font/Objective-Regular.otf");
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+h1,
+h2 {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+body {
+  font-family: "Objective";
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  color: rgba(38, 0, 65, 1);
+}
+.header {
+  position: relative;
+  background: linear-gradient(180deg, rgba(74, 153, 211, 0.2), rgba(74, 153, 211, 0)), #ffffff;
+  box-shadow: 0px 4px 16px rgba(75, 0, 129, 0.26);
+  height: 765px;
+}
+.header__container {
+  width: 950px;
+  margin: 0 auto;
+}
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 45px;
+  height: 42px;
+}
+.header__links {
+  width: 312px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  line-height: 19px;
+  font-weight: 400;
+  color: #0f001a;
+}
+.header__links a:nth-child(1) {
+  color: #4a99d3;
+  font-weight: 500;
+}
+.header .logo {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 42px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #4a99d3;
+}
+
+.header__content {
+  position: relative;
+  width: 636px;
+  height: 384px;
+  margin-top: 146px;
+}
+.header__content h1 {
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 70px;
+  letter-spacing: 0.02em;
+  color: #260041;
+}
+.header__text {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 36px;
+  color: #260041;
+  margin: 14px 0 0;
+}
+.header__buttons {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 380px;
+  height: 60px;
+}
+.header__buttons button {
+  width: 180px;
+  height: 60px;
+  border: 0;
+  background: #4a99d3;
+  border-radius: 5px;
+}
+.header__buttons .google {
+  background-image: url("./assets/playstore.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.header__buttons .apple {
+  background-image: url("./assets/appstore.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.header__container::before {
+  content: "";
+  position: absolute;
+  bottom: 75px;
+  right: 95px;
+  background-image: url("./assets/mockup.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 440px;
+  height: 540px;
+}
