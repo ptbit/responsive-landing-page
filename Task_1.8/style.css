@@ -5,6 +5,7 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 h1,
 h2 {
@@ -25,7 +26,7 @@ body {
   position: relative;
   background: linear-gradient(180deg, rgba(74, 153, 211, 0.2), rgba(74, 153, 211, 0)), #ffffff;
   box-shadow: 0px 4px 16px rgba(75, 0, 129, 0.26);
-  max-height: 765px;
+  min-height: 765px;
 }
 .header__container {
   max-width: 980px;
@@ -36,7 +37,7 @@ body {
   display: flex;
   justify-content: space-between;
   padding-top: 45px;
-  height: 42px;
+  line-height: 42px;
 }
 .header .logo {
   margin-right: 20px;
@@ -68,11 +69,15 @@ body {
 }
 /* CONTENT */
 .header__content {
-  margin-top: 70px;
+  position: absolute;
+  top: 140px;
+  left: 0;
+  right: 0;
   display: flex;
-  justify-content: space-between;
-  gap: 30px;
-  width: 112%;
+  /* justify-content: space-between; */
+  border: 1px solid black;
+  padding-left: max(15px, calc((100% - 950px) / 2));
+  /* min-height: calc(100vh - 90px - 83px); */
 }
 
 .left {
@@ -88,40 +93,6 @@ body {
   line-height: 70px;
   letter-spacing: 0.02em;
   color: #260041;
-}
-
-@media only screen and (max-width: 1233px) {
-  .header__content {
-    width: 110%;
-  }
-}
-@media only screen and (max-width: 1193px) {
-  .header__content {
-    width: 107%;
-  }
-}
-@media only screen and (max-width: 1135px) {
-  .header__content {
-    width: 104%;
-  }
-}
-@media only screen and (max-width: 1075px) {
-  .header__content {
-    width: 100%;
-  }
-}
-@media only screen and (max-width: 900px) {
-  .header__content {
-    flex-direction: column;
-  }
-  .left {
-    margin: 0 auto;
-  }
-  .right {
-    margin: 0 auto;
-    width: 440px;
-    height: 700px;
-  }
 }
 
 .right {
@@ -166,8 +137,29 @@ body {
   background-repeat: no-repeat;
 }
 
+@media (max-width: 777px) {
+  .right {
+    width: 0px;
+  }
+  .left {
+    height: 100%;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 10px;
+  }
+  .header {
+    min-height: 100vh;
+  }
+  .header__content {
+    padding: 0px;
+  }
+  .header__buttons {
+    align-self: center;
+  }
+}
+
 /* main__container */
-.main__container {
+/* .main__container {
   background-color: rgba(189, 185, 185, 0.199);
   width: 950px;
   height: 1175px;
@@ -193,4 +185,4 @@ body {
   max-width: 100%;
   height: 100%;
   background-color: rgba(47, 100, 37, 0.199);
-}
+} */
