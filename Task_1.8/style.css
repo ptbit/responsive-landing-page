@@ -137,6 +137,7 @@ body {
 .we_do {
   max-width: 950px;
   max-height: 1475px;
+  padding: 0 15px;
   margin: 150px auto 150px;
   display: flex;
   justify-content: space-between;
@@ -165,11 +166,9 @@ body {
   top: -155px;
   right: -240px;
 }
-.we_do .text {
-  max-width: 85px;
-}
-.text h2 {
-  width: 400px;
+
+.we_do > h2 {
+  max-width: 400px;
   font-style: normal;
   font-weight: 500;
   font-size: 36px;
@@ -182,7 +181,7 @@ body {
   height: 100%;
 }
 .group {
-  width: 380px;
+  max-width: 380px;
   height: 525px;
   background: #ffffff;
   box-shadow: 5px 20px 50px rgba(74, 153, 211, 0.2);
