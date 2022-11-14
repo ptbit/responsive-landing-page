@@ -1,0 +1,62 @@
+@media (max-width: 777px) {
+  .right {
+    width: 0px;
+  }
+  .left {
+    height: 100%;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 10px;
+  }
+  .header__content {
+    padding: 0px;
+  }
+  .header__buttons {
+    align-self: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .header__top {
+    padding-top: 15px;
+  }
+  .menu {
+    justify-content: end;
+  }
+  .menu__list {
+    width: 75%;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  .header .logo {
+    align-self: center;
+  }
+  .header__buttons {
+    margin-top: 10px;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  .left h1 {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .header__text {
+    font-weight: 400;
+    font-size: 17px;
+  }
+}
+/* GALAXY FOLD */
+@media (max-width: 280px) {
+  .header__top {
+    padding-top: 10px;
+  }
+  .header__content {
+    top: 120px;
+  }
+  .menu__list {
+    width: 100%;
+  }
+}
