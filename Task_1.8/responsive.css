@@ -1,4 +1,16 @@
+@media (max-width: 1000px) {
+  .header__content {
+    top: 80px;
+  }
+  .header {
+    min-height: 640px;
+  }
+}
+/* ---------------------------------------------- 777 px -------------------- */
 @media (max-width: 777px) {
+  .header {
+    min-height: 540px;
+  }
   .right {
     width: 0px;
   }
@@ -15,7 +27,7 @@
     align-self: center;
   }
 }
-
+/* ---------------------------------------------- 500 px -------------------- */
 @media (max-width: 500px) {
   .header__top {
     padding-top: 15px;
@@ -48,8 +60,17 @@
     font-size: 17px;
   }
 }
+@media (max-width: 390px) {
+  .header {
+    min-height: 710px;
+}
+}
 /* GALAXY FOLD */
+/* ---------------------------------------------- 280 px -------------------- */
 @media (max-width: 280px) {
+  .header {
+    min-height: 750px;
+}
   .header__top {
     padding-top: 10px;
   }
