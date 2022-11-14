@@ -60,9 +60,14 @@
     font-size: 17px;
   }
 }
+/* ---------------------------------------------- 390 px -------------------- */
 @media (max-width: 390px) {
   .header {
     min-height: 710px;
+}
+.left h1 {
+  font-size: 30px;
+  line-height: 35px;
 }
 }
 /* GALAXY FOLD */
