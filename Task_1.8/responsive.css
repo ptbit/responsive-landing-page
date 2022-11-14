@@ -1,3 +1,18 @@
+/* ---------------------------------------PSEVDO 1455 px -------------------- */
+@media (max-width: 1455px) {
+  .we_do::after,
+  .we_do::before {
+    display: none;
+  }
+}
+/* ---------------------------------------PSEVDO 1135 px -------------------- */
+@media (max-width: 1135px) {
+  .group1::after,
+  .group2::after,
+  .group3::after {
+    display: none;
+  }
+}
 @media (max-width: 1000px) {
   .header__content {
     top: 80px;
@@ -64,18 +79,18 @@
 @media (max-width: 390px) {
   .header {
     min-height: 710px;
-}
-.left h1 {
-  font-size: 30px;
-  line-height: 35px;
-}
+  }
+  .left h1 {
+    font-size: 30px;
+    line-height: 35px;
+  }
 }
 /* GALAXY FOLD */
 /* ---------------------------------------------- 280 px -------------------- */
 @media (max-width: 280px) {
   .header {
     min-height: 750px;
-}
+  }
   .header__top {
     padding-top: 10px;
   }
