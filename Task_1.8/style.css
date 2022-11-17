@@ -468,7 +468,6 @@ body {
 .download {
   max-width: 1028px;
   margin: 0 auto;
-  /* border: 1px solid black; */
 }
 .download_container {
   display: flex;
@@ -488,39 +487,31 @@ body {
   width: 50%;
   align-self: center;
   text-align: center;
-  padding-left: 25px;
+  color: var(--secondary-text-color);
 }
 .download__title {
-  /*?*/
   margin-bottom: 16px;
   font-weight: 700;
   font-size: 25px;
   line-height: 26px;
-  text-align: center;
-  color: #0f001a;
 }
 .download__text {
-  /*?*/
   max-width: 444px;
-  margin: 0 auto;
   margin-bottom: 56px;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  text-align: center;
-  color: #0f001a;
   opacity: 0.5;
 }
 .download__buttons {
-  /*?*/
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: 0 auto;
   max-width: 380px;
   height: 60px;
 }
 .download__buttons button {
-  /*?*/
   width: 180px;
   height: 60px;
   border: 0;
@@ -539,70 +530,66 @@ body {
 /******************** footer *******************/
 /******************** footer *******************/
 .footer {
+  position: relative;
   max-width: 100%;
-  /* max-height: 350px; */
-  background-color: #4a99d3;
-  /* background-color: #4a9ad318; */
   padding-top: 55px;
   color: white;
-  position: relative;
+  background-color: var(--main-blue-color);
 }
 .footer::before {
   content: "";
+  position: absolute;
+  top: -150px;
+  right: 0;
+  z-index: -1;
+  width: 255px;
+  height: 200px;
   background-image: url(./assets/download/right-orange.svg);
   background-repeat: no-repeat;
   background-position: center;
-  width: 255px;
-  height: 200px;
-  position: absolute;
-  top: -150px;
-  right: 170px;
-  z-index: -1;
 }
 .footer::after {
   content: "";
+  position: absolute;
+  top: -150px;
+  left: 0;
+  z-index: -1;
+  width: 255px;
+  height: 200px;
   background-image: url(./assets/download/left-blue.png);
   background-repeat: no-repeat;
   background-position: center;
-  width: 255px;
-  height: 200px;
-  position: absolute;
-  top: -150px;
-  left: 200px;
-  z-index: -1;
 }
 .footer__container {
   display: flex;
   flex-direction: column;
 }
 .footer__top {
-  max-width: 1192px;
-  width: 100%;
-  height: 215px;
-  margin: 0 auto;
-  margin-bottom: 20px;
-  /* background-color: rgba(136, 34, 34, 0.062); */
   display: flex;
   justify-content: space-between;
   gap: 60px;
+  width: 100%;
+  max-width: 1192px;
+  margin: 0 auto;
+  margin-bottom: 20px;
   border-bottom: 1px solid #ffffff;
 }
 .footer__logo {
   display: block;
   height: 35px;
+  margin-right: 75px;
   font-weight: 700;
   font-size: 34px;
   line-height: 35px;
   text-transform: uppercase;
-  margin-right: 75px;
 }
 .links__title {
   padding-bottom: 2px;
   margin-bottom: 34px;
-  border-bottom: 1px solid white;
   font-weight: 500;
   font-size: 18px;
   line-height: 19px;
+  border-bottom: 1px solid white;
 }
 .list__item {
   margin-bottom: 18px;
@@ -620,12 +607,15 @@ body {
 }
 .newsletter__form {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
-  gap: 10px;
+  gap: 1%;
 }
 .newsletter__form input {
-  width: 70%;
+  width: 69%;
+  height: 50px;
   padding: 18px;
+  margin-bottom: 10px;
   font-size: 14px;
   line-height: 14px;
   background: #ffffff;
@@ -633,15 +623,16 @@ body {
   border: 0;
 }
 .newsletter__form button {
-  width: 30%;
+  width: 29%;
   min-width: 115px;
-  border: 0;
-  background: #ffffff;
-  border-radius: 3px;
+  height: 50px;
   font-weight: 700;
   font-size: 16px;
   line-height: 17px;
-  color: #4a99d3;
+  color: var(--main-blue-color);
+  background: #ffffff;
+  border: 0;
+  border-radius: 3px;
 }
 
 .footer__bottomn {
@@ -652,10 +643,9 @@ body {
   font-size: 16px;
 }
 .bottomn__container {
-  max-height: 16px;
   display: flex;
   justify-content: space-between;
-  /* border: 1px solid black; */
+  max-height: 16px;
   align-items: center;
 }
 .footer__socials {
@@ -674,7 +664,7 @@ body {
   background-image: url("./assets/footer/youtube.svg");
 }
 .instagram {
-width: 16px;
+  width: 16px;
   background-image: url("./assets/footer/instagram.svg");
 }
 .facebook {
