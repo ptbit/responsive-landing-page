@@ -48,9 +48,9 @@
   .header {
     min-height: 540px;
   }
-  .right {
+  /* .right {
     width: 0px;
-  }
+  } */
   .left {
     height: 100%;
     margin: 0 auto;

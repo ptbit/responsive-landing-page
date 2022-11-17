@@ -5,11 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
-    <link rel="stylesheet" href="./responsive.css" />
+    <!-- <link rel="stylesheet" href="./responsive.css" /> -->
     <title>Task_1.8</title>
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="header__container">
         <div class="header__top">
           <a class="logo" href="#">logo</a>
@@ -30,11 +30,14 @@
       </div>
       <div class="header__content">
         <div class="left">
-          <h1>New E-commerce App best for You</h1>
-          <p class="header__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet sed vulputate vitae velit
-            dictum cursus amet. Turpis donec ut velit quis. Cursus commodo, eget urna, sapien amet.
-          </p>
+          <div class="left__content">
+            <h1>New E-commerce App best for You</h1>
+            <p class="header__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet sed vulputate vitae
+              velit dictum cursus amet. Turpis donec ut velit quis. Cursus commodo, eget urna,
+              sapien amet.
+            </p>
+          </div>
           <div class="header__buttons">
             <button class="google"></button>
             <button class="apple"></button>
@@ -42,7 +45,7 @@
         </div>
         <div class="right"></div>
       </div>
-    </header> -->
+    </header>
 
     <section class="we_do">
       <h2>What we do to help our customers in digital era.</h2>
@@ -87,5 +90,135 @@
         </div>
       </div>
     </section>
+
+    <section class="how">
+      <div class="how__container">
+        <h3 class="how__title">How it works</h3>
+        <div class="steps">
+          <div class="step">
+            <div class="step__logo">
+              <img src="./assets/how/first.svg" alt="first step" />
+            </div>
+            <div class="step__title">Create an account</div>
+            <div class="step__text">Lorem ipsum dolor sit amet, consecteteu.</div>
+          </div>
+          <div class="step">
+            <div class="step__logo">
+              <img src="./assets/how/second.svg" alt="second step" />
+            </div>
+            <div class="step__title">Get authorization</div>
+            <div class="step__text">Lorem ipsum dolor sit amet, consecteteu.</div>
+          </div>
+          <div class="step">
+            <div class="step__logo">
+              <img src="./assets/how/third.svg" alt="third step" />
+            </div>
+            <div class="step__title">Enjoy the app</div>
+            <div class="step__text">Lorem ipsum dolor sit amet, consecteteu.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <section class="reviews">
+      <div class="reviews__container">
+        <h3 class="reviews__title">What our client say</h3>
+        <div class="reviews__content">
+          <div class="avatar__wraper">
+            <img src="./assets/reviews/avatar.png" alt="" />
+          </div>
+          <div class="review__wraper">
+            <div class="reviev_quote">
+              <img src="./assets/reviews/quote.svg" alt="quote image">
+            </div>
+            <div class="review__text">
+              Amet in elementum nulla scelerisque dui, egestas at. Elit consectetur turpis elementum
+              amet vitae et etiam nec. Varius volutpat hac adipiscing tincidunt pretium.
+            </div>
+            <div class="review__autor">Angel Paulina</div>
+          </div>
+        </div>
+        <div class="reviews__buttons">
+          <button class="review__btn btn-back"></button>
+          <button class="review__btn btn-forvard"></button>
+        </div>
+      </div>
+    </section>
+
+    <section class="download">
+      <div class="download_container">
+        <div class="download__logo">
+          <img src="./assets/download/logo.png" alt="download logo" />
+        </div>
+        <div class="download_content">
+          <h3 class="download__title">Download app to enjoy more!</h3>
+          <div class="download__text">
+            Amet in elementum nulla scelerisque dui, egestas at. Elit consectetur turpis elementum
+            amet vitae et etiam nec. Varius volutpat hac adipiscing tincidunt pretium.
+          </div>
+          <div class="download__buttons">
+            <button class="google"></button>
+            <button class="apple"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <div class="footer__top">
+          <a class="footer__logo" href="#">logo</a>
+
+          <div class="footer__links">
+            <div class="links__title"><p>Quick Links</p></div>
+            <ul class="footer__list">
+              <li class="list__item"><a class="footer_link" href="#">Sign Up</a></li>
+              <li class="list__item"><a class="footer_link" href="#">About Us</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__links">
+            <div class="links__title"><p>Others</p></div>
+            <ul class="footer__list">
+              <li class="list__item"><a class="footer_link" href="#">User FAQs</a></li>
+              <li class="list__item"><a class="footer_link" href="#">Contact Us</a></li>
+              <li class="list__item"><a class="footer_link" href="#">Legal</a></li>
+              <li class="list__item"><a class="footer_link" href="#">Privacy Policy</a></li>
+              <li class="list__item"><a class="footer_link" href="#">Terms and Conditions</a></li>
+            </ul>
+          </div>
+
+          <div class="footer__links">
+            <div class="links__title"><p>Products</p></div>
+            <ul class="footer__list">
+              <li class="list__item"><a class="footer_link" href="#">Send</a></li>
+              <li class="list__item"><a class="footer_link" href="#">Receive</a></li>
+              <li class="list__item"><a class="footer_link" href="#">Buy</a></li>
+            </ul>
+          </div>
+
+          <div class="newsletter">
+            <div class="newsletter__title">
+              Subscribe to our newsletter and be the first to know about our updates
+            </div>
+            <div class="newsletter__form">
+              <input type="email" placeholder="Email Address" />
+              <button>Subscribe</button>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottomn">
+          <div class="bottomn__container">
+            <div class="bottomn__text">Copyright © 2020. All rights reserved.</div>
+            <ul class="footer__socials">
+              <li><a href="#" class="youtube"></a></li>
+              <li><a href="#" class="instagram"></a></li>
+              <li><a href="#" class="facebook"></a></li>
+              <li><a href="#" class="twitter"></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
