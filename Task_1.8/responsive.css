@@ -30,6 +30,9 @@
   }
 }
 /* --------------------------- 1000 ----------------------------- */
+/* --------------------------- 1000 ----------------------------- */
+/* --------------------------- 1000 ----------------------------- */
+/* --------------------------- 1000 ----------------------------- */
 @media screen and (max-width: 1000px) {
   html {
     font-size: 8px;
@@ -67,7 +70,8 @@
     padding: 7rem 50px;
   }
   .reviews__container {
-    margin: 50px 0 50px;
+    margin-top: 50px;
+    margin-bottom: 0px;
   }
   .reviews__content {
     gap: 0 20px;
@@ -76,7 +80,38 @@
   .review__wraper {
     width: 50%;
   }
+  .download_container{
+    margin: 40px 0 90px;
+  }
 }
+/* --------------------------- 700 --------------------------- */
+/* --------------------------- 700 --------------------------- */
+/* --------------------------- 700 --------------------------- */
+/* --------------------------- 700 --------------------------- */
+@media screen and (max-width: 700px) {
+  .review__btn {
+    height: 70px;
+  }
+  .download_container{
+    flex-direction: column;
+  }
+  .download__logo{
+    margin: 0 auto;
+    width: 80%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .download__text{
+    max-width: 100%;
+  }
+  .download_content {
+    width: 80%;
+    padding: 0 1.5rem;
+  }
+}
+
+/* --------------------------- BURGER MENU --------------------------- */
+/* --------------------------- BURGER MENU --------------------------- */
 /* --------------------------- BURGER MENU --------------------------- */
 @media screen and (max-width: 600px) {
   html {
@@ -164,6 +199,9 @@
   }
   .avatar__wraper,
   .review__wraper {
+    width: 100%;
+  }
+  .download__logo, .download_content {
     width: 100%;
   }
 }

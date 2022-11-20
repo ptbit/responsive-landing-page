@@ -497,7 +497,7 @@ body {
 }
 .download__logo {
   width: 50%;
-  min-height: 458px;
+  /* min-height: 458px; */
 }
 .download__logo img {
   max-width: 100%;
@@ -514,15 +514,15 @@ body {
 .download__title {
   margin-bottom: 16px;
   font-weight: 700;
-  font-size: 25px;
-  line-height: 26px;
+  font-size: 2.5rem;
+  line-height: 2.6rem;
 }
 .download__text {
   max-width: 444px;
   margin-bottom: 56px;
   font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
   opacity: 0.5;
 }
 .download__buttons {
