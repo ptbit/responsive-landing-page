@@ -1,11 +1,18 @@
 @font-face {
   font-family: "Objective";
   src: url("./assets/font/Objective-Regular.otf");
+  font-weight: 400; /* Normal - Regular */
 }
-/* @font-face {
+@font-face {
+  font-family: "Objective";
+  src: url("./assets/font/Objective-Medium.otf");
+  font-weight: 500; /* Medium */
+}
+@font-face {
   font-family: "Objective";
   src: url("./assets/font/Objective-Bold.otf");
-} */
+  font-weight: 700; /* Bold */
+}
 :root {
   --main-text-color: rgba(38, 0, 65, 1);
   --main-blue-color: rgba(74, 153, 211, 1);
@@ -25,8 +32,8 @@ ul {
 }
 body {
   font-family: "Objective";
-  font-weight: normal;
-  font-size: 18px;
+  font-weight: 400;
+  font-size: 16px;
   line-height: 22px;
   color: var(--main-text-color);
 }
@@ -57,6 +64,9 @@ body {
   text-decoration: none;
   color: var(--main-blue-color);
 }
+#burger {
+  display: none;
+}
 .menu {
   display: flex;
   align-items: center;
@@ -69,26 +79,27 @@ body {
   font-weight: 400;
   color: var(--secondary-text-color);
 }
+.menu__link {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
 .menu__link__active {
   color: var(--main-blue-color);
   font-weight: 500;
 }
+
 /* CONTENT */
 .header__content {
   max-width: 1110px;
   margin-top: 70px;
   margin-left: max(15px, calc((100% - 950px) / 2));
   display: grid;
-  grid-template-columns: 1.3fr 0.7fr;
+  grid-template-columns: 1.3fr minmax(342px, 0.7fr);
   grid-template-rows: 1fr;
-  gap: 0px 0px;
-  grid-auto-flow: row;
 }
 .left {
   width: 100%;
-  max-width: 650px;
-  min-height: 350px;
-
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
@@ -104,7 +115,6 @@ body {
   font-size: 50px;
   line-height: 70px;
   letter-spacing: 0.02em;
-  color: var(--main-text-color);
 }
 .left__content {
   justify-self: stretch;
@@ -137,6 +147,26 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   max-height: 440px;
+}
+.header__buttons2 {
+  display: none;
+}
+.header__buttons2 button {
+  width: 180px;
+  height: 60px;
+  border: 0;
+  border-radius: 5px;
+  background: var(--main-blue-color);
+}
+.header__buttons2 .google {
+  background-image: url("./assets/playstore.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.header__buttons2 .apple {
+  background-image: url("./assets/appstore.svg");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .header__buttons button {
@@ -171,26 +201,29 @@ body {
 }
 .we_do::after {
   content: "";
-  background-image: url(./assets/wedo/orange-rectangle.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 190px;
-  height: 200px;
   position: absolute;
   left: -270px;
-  bottom: -160px;
+  bottom: -150px;
   z-index: -1;
+  width: 255px;
+  height: 200px;
+  background-image: url(./assets/download/right-orange.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: rotate(180deg);
 }
 .we_do::before {
   content: "";
-  background-image: url(./assets/wedo/blue-rectangle.png);
+  position: absolute;
+  top: -150px;
+  right: -260px;
+  z-index: -1;
+  width: 255px;
+  height: 200px;
+  background-image: url(./assets/wedo/right-blue.png);
   background-repeat: no-repeat;
   background-position: center;
-  width: 190px;
-  height: 200px;
-  position: absolute;
-  top: -155px;
-  right: -240px;
+  /* transform: rotate(180deg); */
 }
 
 .we_do > h2 {
@@ -372,13 +405,13 @@ body {
 }
 .reviews__content::after {
   content: "";
-  background-image: url(./assets/wedo/dots.png);
-  width: 155px;
-  height: 155px;
   position: absolute;
   bottom: 230px;
-  right: -200px;
+  right: -160px;
   z-index: -1;
+  width: 155px;
+  height: 155px;
+  background-image: url(./assets/wedo/dots.png);
 }
 .avatar__wraper {
   width: 60%;
