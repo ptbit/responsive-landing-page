@@ -28,6 +28,19 @@
   .how {
     padding: 7rem 200px;
   }
+  .footer__top {
+    gap: 20px;
+  }
+  .footer__logo {
+    margin-right: 20px;
+    padding-left: 10px;
+  }
+  .footer__top {
+    padding: 0 10px;
+  }
+  .bottomn__container {
+    padding: 0 10px;
+  }
 }
 /* --------------------------- 1000 ----------------------------- */
 /* --------------------------- 1000 ----------------------------- */
@@ -76,12 +89,23 @@
   .reviews__content {
     gap: 0 20px;
   }
+  .footer {
+    padding-top: 35px;
+  }
   .avatar__wraper,
   .review__wraper {
     width: 50%;
   }
-  .download_container{
+  .download_container {
     margin: 40px 0 90px;
+  }
+  .footer::before,
+  .footer::after,
+  .footer__logo {
+    display: none;
+  }
+  .links__title {
+    min-width: 84px;
   }
 }
 /* --------------------------- 700 --------------------------- */
@@ -92,24 +116,33 @@
   .review__btn {
     height: 70px;
   }
-  .download_container{
+  .download_container {
     flex-direction: column;
   }
-  .download__logo{
+  .download__logo {
     margin: 0 auto;
     width: 80%;
     margin-bottom: 20px;
     text-align: center;
   }
-  .download__text{
+  .download__text {
     max-width: 100%;
   }
   .download_content {
     width: 80%;
     padding: 0 1.5rem;
   }
+  .footer__top {
+    flex-direction: column;
+  }
+  .list__item {
+    font-size: 1.6rem;
+  }
+  .newsletter__form input {
+    padding: 5px;
+    font-size: 1.6rem;
+  }
 }
-
 /* --------------------------- BURGER MENU --------------------------- */
 /* --------------------------- BURGER MENU --------------------------- */
 /* --------------------------- BURGER MENU --------------------------- */
@@ -190,7 +223,7 @@
   .reviev_quote {
     margin-bottom: 4rem;
   }
-  .review__autor{
+  .review__autor {
     margin-bottom: 2rem;
   }
   .reviews__buttons {
@@ -201,7 +234,11 @@
   .review__wraper {
     width: 100%;
   }
-  .download__logo, .download_content {
+  .download__logo,
+  .download_content {
     width: 100%;
+  }
+  .newsletter__form button {
+    margin-bottom: 10px;
   }
 }

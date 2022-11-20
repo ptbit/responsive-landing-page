@@ -497,7 +497,6 @@ body {
 }
 .download__logo {
   width: 50%;
-  /* min-height: 458px; */
 }
 .download__logo img {
   max-width: 100%;
@@ -601,22 +600,22 @@ body {
   height: 35px;
   margin-right: 75px;
   font-weight: 700;
-  font-size: 34px;
-  line-height: 35px;
+  font-size: 3.4rem;
+  line-height: 3.5rem;
   text-transform: uppercase;
 }
 .links__title {
   padding-bottom: 2px;
-  margin-bottom: 34px;
+  margin-bottom: 3.4rem;
   font-weight: 500;
-  font-size: 18px;
-  line-height: 19px;
+  font-size: 1.8rem;
+  line-height: 1.9rem;
   border-bottom: 1px solid white;
 }
 .list__item {
-  margin-bottom: 18px;
-  font-size: 14px;
-  line-height: 14px;
+  margin-bottom: 1.8rem;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
 }
 .newsletter {
   max-width: 394px;
@@ -624,8 +623,8 @@ body {
 .newsletter__title {
   margin-bottom: 20px;
   font-weight: 400;
-  font-size: 18px;
-  line-height: 26px;
+  font-size: 1.8rem;
+  line-height: 2.6rem;
 }
 .newsletter__form {
   display: flex;
@@ -636,10 +635,10 @@ body {
 .newsletter__form input {
   width: 69%;
   height: 50px;
-  padding: 18px;
+  padding: 1.8rem;
   margin-bottom: 10px;
-  font-size: 14px;
-  line-height: 14px;
+  font-size: 1.4rem;
+  line-height: 1.4rem;
   background: #ffffff;
   border-radius: 3px;
   border: 0;
@@ -649,8 +648,8 @@ body {
   min-width: 115px;
   height: 50px;
   font-weight: 700;
-  font-size: 16px;
-  line-height: 17px;
+  font-size: 1.6rem;
+  line-height: 1.7rem;
   color: var(--main-blue-color);
   background: #ffffff;
   border: 0;
@@ -662,7 +661,7 @@ body {
   width: 100%;
   margin: 0 auto;
   margin-bottom: 20px;
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 .bottomn__container {
   display: flex;
