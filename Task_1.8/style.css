@@ -372,7 +372,7 @@ body {
 .reviews__container {
   position: relative;
 
-  margin: 150px 0 120px;
+  margin: 100px 0 80px;
   padding-top: 40px;
 }
 .reviews__title {
@@ -380,10 +380,9 @@ body {
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-
-  font-weight: 800;
-  font-size: 1.44em;
-  line-height: 27px;
+  font-weight: 700;
+  font-size: 2.6rem;
+  line-height: 2.7rem;
   text-align: center;
   color: var(--secondary-text-color);
 }
@@ -396,9 +395,9 @@ body {
   content: "";
   position: absolute;
   bottom: 230px;
-  right: -160px;
+  right: -100px;
   z-index: -1;
-  width: 155px;
+  width: 100px;
   height: 155px;
   background-image: url(./assets/wedo/dots.png);
 }
@@ -441,15 +440,15 @@ body {
   margin-bottom: 40px;
   padding-right: 10px;
   font-weight: 400;
-  font-size: 0.88em;
-  line-height: 24px;
+  font-size: 1.6rem;
+  line-height: 2.4rem;
   color: var(--secondary-text-color);
   opacity: 0.5;
 }
 .review__autor {
   font-weight: 500;
-  line-height: 19px;
-  font-size: 1em;
+  font-size: 1.8rem;
+  line-height: 1.9rem;
   color: var(--secondary-text-color);
 }
 
@@ -460,6 +459,7 @@ body {
   width: 162px;
   height: 80px;
   display: flex;
+  margin-right: 15px;
 }
 .review__btn {
   width: 80px;

@@ -3,7 +3,8 @@
   .we_do::before,
   .group1::after,
   .group2::after,
-  .group3::after {
+  .group3::after,
+  .reviews__content::after {
     display: none;
   }
   .we_do {
@@ -27,7 +28,6 @@
   .how {
     padding: 7rem 200px;
   }
- 
 }
 /* --------------------------- 1000 ----------------------------- */
 @media screen and (max-width: 1000px) {
@@ -65,6 +65,16 @@
   }
   .how {
     padding: 7rem 50px;
+  }
+  .reviews__container {
+    margin: 50px 0 50px;
+  }
+  .reviews__content {
+    gap: 0 20px;
+  }
+  .avatar__wraper,
+  .review__wraper {
+    width: 50%;
   }
 }
 /* --------------------------- BURGER MENU --------------------------- */
@@ -121,14 +131,39 @@
   .left h1 {
     line-height: 6rem;
   }
-  .we_do{
+  .we_do {
     padding: 0;
   }
-  .we_do > h2{
+  .we_do > h2 {
     padding: 0 10px;
   }
   .steps {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
+  }
+  .step {
+    max-width: 100%;
+  }
+  .reviews__content {
+    flex-direction: column;
+    padding: 0 20px;
+    gap: 20px;
+  }
+  .review__text {
+    max-width: 100%;
+  }
+  .reviev_quote {
+    margin-bottom: 4rem;
+  }
+  .review__autor{
+    margin-bottom: 2rem;
+  }
+  .reviews__buttons {
+    position: static;
+    margin: 0 auto;
+  }
+  .avatar__wraper,
+  .review__wraper {
+    width: 100%;
   }
 }
