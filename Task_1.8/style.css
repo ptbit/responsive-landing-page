@@ -30,11 +30,13 @@ a {
 ul {
   list-style: none;
 }
+html {
+  font-size: 10px;
+}
 body {
   font-family: "Objective";
   font-weight: 400;
-  font-size: 16px;
-  line-height: 22px;
+  line-height: 2.2rem;
   color: var(--main-text-color);
 }
 .header {
@@ -51,15 +53,15 @@ body {
 .header__top {
   display: flex;
   justify-content: space-between;
-  padding-top: 45px;
-  line-height: 42px;
+  padding-top: 4.5rem;
+  line-height: 4.2rem;
   max-width: 950px;
 }
 .header .logo {
-  margin-right: 20px;
+  margin-right: 2rem;
   font-weight: 700;
-  font-size: 40px;
-  line-height: 42px;
+  font-size: 4rem;
+  line-height: 4.2rem;
   text-transform: uppercase;
   text-decoration: none;
   color: var(--main-blue-color);
@@ -75,7 +77,8 @@ body {
   width: 312px;
   display: flex;
   justify-content: space-between;
-  line-height: 19px;
+  line-height: 1.9rem;
+  font-size: 1.8rem;
   font-weight: 400;
   color: var(--secondary-text-color);
 }
@@ -92,7 +95,7 @@ body {
 /* CONTENT */
 .header__content {
   max-width: 1110px;
-  margin-top: 70px;
+  margin-top: 7rem;
   margin-left: max(15px, calc((100% - 950px) / 2));
   display: grid;
   grid-template-columns: 1.3fr minmax(342px, 0.7fr);
@@ -103,7 +106,6 @@ body {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 0px 0px;
   grid-auto-flow: row;
   grid-template-areas:
     "text"
@@ -112,28 +114,33 @@ body {
 }
 .left h1 {
   font-weight: 500;
-  font-size: 50px;
-  line-height: 70px;
+  font-size: 5rem;
+  line-height: 7rem;
   letter-spacing: 0.02em;
 }
 .left__content {
   justify-self: stretch;
-  grid-area: "text";
+  grid-area: text;
 }
 .header__text {
-  margin-top: 14px;
+  margin-top: 1.4rem;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 36px;
+  font-size: 2rem;
+  line-height: 3.6rem;
   color: var(--main-text-color);
 }
 .header__buttons {
-  justify-self: start;
+  /* justify-self: start; */
   align-self: end;
-  grid-area: "buttons";
+  grid-area: buttons;
   width: 380px;
   height: 60px;
-  margin: 60px 0 90px;
+  margin: 6rem 0 9rem;
+  display: flex;
+  justify-content: space-between;
+}
+.header__buttons_bot {
+  margin: 2rem 0 4rem;
 }
 
 .right {
@@ -148,40 +155,25 @@ body {
   background-position: center;
   max-height: 440px;
 }
-.header__buttons2 {
+.header__buttons_bot {
   display: none;
 }
-.header__buttons2 button {
+.header__buttons button,
+.header__buttons_bot button {
   width: 180px;
   height: 60px;
   border: 0;
   border-radius: 5px;
   background: var(--main-blue-color);
 }
-.header__buttons2 .google {
+.header__buttons .google,
+.header__buttons_bot .google {
   background-image: url("./assets/playstore.svg");
   background-position: center;
   background-repeat: no-repeat;
 }
-.header__buttons2 .apple {
-  background-image: url("./assets/appstore.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.header__buttons button {
-  width: 180px;
-  height: 60px;
-  border: 0;
-  border-radius: 5px;
-  background: var(--main-blue-color);
-}
-.header__buttons .google {
-  background-image: url("./assets/playstore.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.header__buttons .apple {
+.header__buttons .apple,
+.header__buttons_bot .apple {
   background-image: url("./assets/appstore.svg");
   background-position: center;
   background-repeat: no-repeat;
@@ -192,9 +184,8 @@ body {
 /******************** WE DO *******************/
 .we_do {
   max-width: 950px;
-  max-height: 1475px;
   padding: 0 15px;
-  margin: 150px auto 150px;
+  margin: 15rem auto 15rem;
   display: flex;
   justify-content: space-between;
   position: relative;
@@ -216,36 +207,31 @@ body {
   content: "";
   position: absolute;
   top: -150px;
-  right: -260px;
+  right: -230px;
   z-index: -1;
-  width: 255px;
+  width: 200px;
   height: 200px;
   background-image: url(./assets/wedo/right-blue.png);
   background-repeat: no-repeat;
   background-position: center;
-  /* transform: rotate(180deg); */
 }
 
 .we_do > h2 {
   max-width: 400px;
   font-style: normal;
   font-weight: 500;
-  font-size: 36px;
-  line-height: 46px;
+  font-size: 3.6rem;
+  line-height: 4.6rem;
   letter-spacing: 0.05em;
   color: var(--main-text-color);
 }
-.we_do .groups {
-  max-height: 1175px;
-  height: 100%;
-}
 .group {
   max-width: 380px;
-  height: 525px;
+  /* height: 525px; */
   background: #ffffff;
   box-shadow: 5px 20px 50px rgba(74, 153, 211, 0.2);
   border-radius: 10px;
-  padding: 48px;
+  padding: 4.8rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -253,15 +239,15 @@ body {
 .group h5 {
   font-style: normal;
   font-weight: 500;
-  font-size: 20px;
-  line-height: 30px;
+  font-size: 2rem;
+  line-height: 3rem;
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
-  margin-bottom: 16px;
+  margin-bottom: 1.6rem;
 }
 .group > p {
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
   opacity: 0.6;
 }
 .group button {
@@ -276,12 +262,12 @@ body {
 }
 .group button > p {
   font-weight: 500;
-  font-size: 14px;
-  line-height: 30px;
+  font-size: 1.4rem;
+  line-height: 3.0rem;
   color: var(--main-blue-color);
 }
 .group button > img {
-  padding-right: 4px;
+  padding-right: 0.4rem;
 }
 .group1 {
   margin-bottom: 110px;
