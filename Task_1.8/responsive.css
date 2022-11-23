@@ -1,31 +1,14 @@
 @media screen and (max-width: 1440px) {
-  .we_do::after,
-  .we_do::before,
+  .what_we_do::after,
+  .what_we_do::before,
   .group1::after,
   .group2::after,
   .group3::after,
   .reviews__content::after {
     display: none;
   }
-  .we_do {
-    flex-direction: column;
-    margin: 10rem auto 5rem;
-  }
-  .we_do > h2 {
-    margin: 0 auto;
-    margin-bottom: 5rem;
-  }
-  .group1,
-  .group2,
-  .group3 {
-    left: 0;
-    position: static;
-    margin-bottom: 5rem;
-  }
-  .groups {
-    margin: 0 auto;
-  }
-  .how {
+
+  .how_it_works {
     padding: 7rem 200px;
   }
   .footer__top {
@@ -79,7 +62,34 @@
     justify-content: center;
     flex-wrap: wrap;
   }
-  .how {
+  .what_we_do {
+    flex-direction: column;
+    margin: 10rem auto 5rem;
+  }
+  .what_we_do > h2 {
+    margin: 0 auto;
+    margin-bottom: 5rem;
+  }
+  .group {
+    padding: 20px;
+  }
+  .group1,
+  .group2,
+  .group3 {
+    left: 0;
+    position: relative;
+    margin-bottom: 5rem;
+  }
+  .groups {
+    margin: 0 auto;
+  }
+  .group1 .group__logo:first-child {
+    margin-top: -25px;
+  }
+  .group__logo {
+    height: 172px;
+  }
+  .how_it_works {
     padding: 7rem 50px;
   }
   .reviews__container {
@@ -96,7 +106,7 @@
   .review__wraper {
     width: 50%;
   }
-  .download_container {
+  .download__container {
     margin: 40px 0 90px;
   }
   .footer::before,
@@ -113,10 +123,13 @@
 /* --------------------------- 700 --------------------------- */
 /* --------------------------- 700 --------------------------- */
 @media screen and (max-width: 700px) {
+  .how_it_works {
+    padding: 7rem 25px;
+  }
   .review__btn {
     height: 70px;
   }
-  .download_container {
+  .download__container {
     flex-direction: column;
   }
   .download__logo {
@@ -138,9 +151,19 @@
   .list__item {
     font-size: 1.6rem;
   }
+  .newsletter{
+    max-width: 100%;
+  }
+  .newsletter__form{
+    margin-bottom: 20px;
+  }
   .newsletter__form input {
-    padding: 5px;
+    width: 100%;
+    padding: 5px 5px 5px 15px;
     font-size: 1.6rem;
+  }
+  .newsletter__form button {
+    width: 100%;
   }
 }
 /* --------------------------- BURGER MENU --------------------------- */
@@ -199,15 +222,24 @@
   .left h1 {
     line-height: 6rem;
   }
-  .we_do {
+  .what_we_do {
     padding: 0;
   }
-  .we_do > h2 {
+  .what_we_do > h2 {
     padding: 0 10px;
   }
+  .group {
+    min-width: 100%;
+    min-height: 370px;
+  }
+  .group__content {
+    margin: 15px;
+  }
+  .group__content > p {
+    margin-bottom: 2rem;
+  }
   .steps {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(3, 1fr);
+    flex-direction: column;
   }
   .step {
     max-width: 100%;
@@ -228,7 +260,8 @@
   }
   .reviews__buttons {
     position: static;
-    margin: 0 auto;
+    display: block;
+    text-align: center;
   }
   .avatar__wraper,
   .review__wraper {
@@ -238,7 +271,16 @@
   .download_content {
     width: 100%;
   }
+   .newsletter > p {
+    font-size: 2rem;
+  }
   .newsletter__form button {
     margin-bottom: 10px;
+  }
+  .list__item {
+    font-size: 1.8rem;
+  }
+  .list__item {
+    line-height: 1.5rem;
   }
 }

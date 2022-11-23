@@ -95,32 +95,17 @@ body {
 /* CONTENT */
 .header__content {
   max-width: 1110px;
-  margin-top: 7rem;
   margin-left: max(15px, calc((100% - 950px) / 2));
   display: grid;
   grid-template-columns: 1.3fr minmax(342px, 0.7fr);
   grid-template-rows: 1fr;
 }
-.left {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "text"
-    "buttons";
-  grid-area: 2 / 1 / 3 / 2;
-}
 .left h1 {
+  margin-top: 75px;
   font-weight: 500;
   font-size: 5rem;
   line-height: 7rem;
   letter-spacing: 0.02em;
-}
-.left__content {
-  justify-self: stretch;
-  grid-area: text;
 }
 .header__text {
   margin-top: 1.4rem;
@@ -130,12 +115,9 @@ body {
   color: var(--main-text-color);
 }
 .header__buttons {
-  /* justify-self: start; */
-  align-self: end;
-  grid-area: buttons;
   width: 380px;
   height: 60px;
-  margin: 6rem 0 9rem;
+  margin: 6rem 0 12rem;
   display: flex;
   justify-content: space-between;
 }
@@ -144,16 +126,13 @@ body {
 }
 
 .right {
-  justify-self: center;
-  align-self: center;
-  grid-area: 2 / 2 / 3 / 3;
   width: 100%;
+  max-height: 440px;
   min-height: 100%;
   background-image: url(./assets/mockup.png);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  max-height: 440px;
 }
 .header__buttons_bot {
   display: none;
@@ -182,7 +161,7 @@ body {
 /******************** WE DO *******************/
 /******************** WE DO *******************/
 /******************** WE DO *******************/
-.we_do {
+.what_we_do {
   max-width: 950px;
   padding: 0 15px;
   margin: 15rem auto 15rem;
@@ -190,7 +169,7 @@ body {
   justify-content: space-between;
   position: relative;
 }
-.we_do::after {
+.what_we_do::after {
   content: "";
   position: absolute;
   left: -270px;
@@ -203,7 +182,7 @@ body {
   background-position: center;
   transform: rotate(180deg);
 }
-.we_do::before {
+.what_we_do::before {
   content: "";
   position: absolute;
   top: -150px;
@@ -216,7 +195,7 @@ body {
   background-position: center;
 }
 
-.we_do > h2 {
+.what_we_do > h2 {
   max-width: 400px;
   font-style: normal;
   font-weight: 500;
@@ -227,14 +206,28 @@ body {
 }
 .group {
   max-width: 380px;
-  /* height: 525px; */
   background: #ffffff;
   box-shadow: 5px 20px 50px rgba(74, 153, 211, 0.2);
   border-radius: 10px;
   padding: 4.8rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  min-height: 535px;
+  min-width: 380px;
+  position: relative;
+}
+.group__logo {
+  display: block;
+  margin: 0 auto;
+  height: 132px;
+}
+.group1 .group__logo:first-child {
+  margin-top: -75px;
+  height: 197px;
+}
+.group__content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin: 48px;
 }
 .group h5 {
   font-style: normal;
@@ -245,26 +238,27 @@ body {
   color: var(--secondary-text-color);
   margin-bottom: 1.6rem;
 }
-.group > p {
+.group__content > p {
   font-size: 1.6rem;
   line-height: 2.6rem;
   opacity: 0.6;
+  margin-bottom: 6.2rem;
 }
 .group button {
   width: 127px;
   height: 30px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 
   border: 0;
   background-color: transparent;
+  text-align: left;
+  cursor: pointer;
 }
-.group button > p {
+.group button > span {
   font-weight: 500;
   font-size: 1.4rem;
-  line-height: 3.0rem;
+  line-height: 3rem;
   color: var(--main-blue-color);
+  margin-right: 21px;
 }
 .group button > img {
   padding-right: 0.4rem;
@@ -315,16 +309,13 @@ body {
 /******************** HOW *******************/
 /******************** HOW *******************/
 /******************** HOW *******************/
-.how {
+.how_it_works {
   background: rgba(74, 153, 211, 0.1);
   padding: 7rem 0;
 }
 
 .how__container {
-  /* max-width: 950px; */
   margin: 0 auto;
-  display: flex;
-  flex-direction: column;
 }
 .how__title {
   color: var(--main-blue-color);
@@ -332,12 +323,11 @@ body {
   font-size: 2.6rem;
   line-height: 2.7rem;
   text-align: center;
-  margin-bottom: 3.0rem;
+  margin-bottom: 3rem;
 }
 .steps {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(2.24rem, 1fr));
-  gap: 15px;
+  display: flex;
+  justify-content: space-between;
   width: 100%;
   max-width: 950px;
   margin: 0 auto;
@@ -353,6 +343,7 @@ body {
 }
 .step__title {
   font-weight: 700;
+  font-size: 1.8rem;
   line-height: 1.9rem;
   margin-bottom: 10px;
 }
@@ -371,7 +362,6 @@ body {
 }
 .reviews__container {
   position: relative;
-
   margin: 100px 0 80px;
   padding-top: 40px;
 }
@@ -402,12 +392,9 @@ body {
   background-image: url(./assets/wedo/dots.png);
 }
 .avatar__wraper {
+  position: relative;
   width: 60%;
   min-height: 400px;
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-end;
-  position: relative;
 }
 .avatar__wraper::after {
   content: "";
@@ -422,10 +409,11 @@ body {
   z-index: -1;
 }
 .avatar__wraper img {
+  display: block;
+  margin: 0 auto;
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
-  align-items: center;
 }
 
 .review__wraper {
@@ -456,9 +444,7 @@ body {
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 162px;
   height: 80px;
-  display: flex;
   margin-right: 15px;
 }
 .review__btn {
@@ -491,7 +477,7 @@ body {
   max-width: 1028px;
   margin: 0 auto;
 }
-.download_container {
+.download__container {
   display: flex;
   margin: 100px 0 120px;
 }
@@ -610,6 +596,9 @@ body {
   font-weight: 500;
   font-size: 1.8rem;
   line-height: 1.9rem;
+}
+.links__title > h4{
+  display: inline;
   border-bottom: 1px solid white;
 }
 .list__item {
@@ -620,7 +609,7 @@ body {
 .newsletter {
   max-width: 394px;
 }
-.newsletter__title {
+.newsletter > p {
   margin-bottom: 20px;
   font-weight: 400;
   font-size: 1.8rem;
