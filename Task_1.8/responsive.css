@@ -53,11 +53,12 @@
   .header__buttons {
     grid-area: buttons;
   }
-  .header__buttons {
+  #buttons1 {
     display: none;
   }
-  .header__buttons_bot {
+  #buttons2 {
     display: flex;
+    width: 100%;
     gap: 10px;
     justify-content: center;
     flex-wrap: wrap;
@@ -151,10 +152,10 @@
   .list__item {
     font-size: 1.6rem;
   }
-  .newsletter{
+  .newsletter {
     max-width: 100%;
   }
-  .newsletter__form{
+  .newsletter__form {
     margin-bottom: 20px;
   }
   .newsletter__form input {
@@ -271,7 +272,7 @@
   .download_content {
     width: 100%;
   }
-   .newsletter > p {
+  .newsletter > p {
     font-size: 2rem;
   }
   .newsletter__form button {
