@@ -110,6 +110,7 @@
   }
   .download__container {
     margin: 40px 0 90px;
+    gap: 30px;
   }
   .footer::before,
   .footer::after,

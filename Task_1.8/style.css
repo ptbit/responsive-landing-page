@@ -476,6 +476,7 @@ body {
 }
 .download__container {
   display: flex;
+  gap: 68px;
   margin: 100px 0 120px;
 }
 .download__logo {
@@ -500,7 +501,6 @@ body {
   line-height: 2.6rem;
 }
 .download__text {
-  max-width: 444px;
   margin-bottom: 56px;
   font-weight: 400;
   font-size: 1.6rem;
