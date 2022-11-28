@@ -64,7 +64,7 @@
     flex-wrap: wrap;
   }
   .what_we_do {
-    flex-direction: column;
+    grid-template-columns: auto;
     margin: 10rem auto 5rem;
   }
   .what_we_do > h2 {
@@ -80,6 +80,7 @@
     left: 0;
     position: relative;
     margin-bottom: 5rem;
+    margin-top: 0px;
   }
   .groups {
     margin: 0 auto;
@@ -221,16 +222,21 @@
     background-color: rgba(95, 180, 236, 0.384);
   }
   .left h1 {
+    min-width: 90%;
     line-height: 6rem;
+  }
+  .header__buttons{
+    height: auto;
   }
   .what_we_do {
     padding: 0;
+    margin: 5rem auto 5rem;
   }
   .what_we_do > h2 {
     padding: 0 10px;
   }
   .group {
-    min-width: 100%;
+    min-width: 90%;
     min-height: 370px;
   }
   .group__content {

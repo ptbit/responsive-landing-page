@@ -131,10 +131,10 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
-#buttons2{
+#buttons2 {
   display: none;
 }
-.header__buttons button{
+.header__buttons button {
   width: 180px;
   height: 60px;
   border: 0;
@@ -146,7 +146,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
-.header__buttons .apple{
+.header__buttons .apple {
   background-image: url("./assets/appstore.svg");
   background-position: center;
   background-repeat: no-repeat;
@@ -159,8 +159,10 @@ body {
   max-width: 950px;
   padding: 0 15px;
   margin: 15rem auto 15rem;
-  display: flex;
-  justify-content: space-between;
+
+  display: grid;
+  grid-template-columns: auto auto;
+
   position: relative;
 }
 .what_we_do::after {
@@ -241,7 +243,6 @@ body {
 .group button {
   width: 127px;
   height: 30px;
-
   border: 0;
   background-color: transparent;
   text-align: left;
@@ -259,7 +260,8 @@ body {
 }
 .group1 {
   margin-bottom: 110px;
-  position: relative;
+  align-self: start;
+  justify-self: center;
 }
 .group1::after {
   content: "";
@@ -272,9 +274,9 @@ body {
   z-index: -1;
 }
 .group2 {
-  position: absolute;
-  top: 25%;
-  left: 85px;
+  margin-top: -350px;
+  align-self: start;
+  justify-self: center; 
 }
 .group2::after {
   content: "";
@@ -287,7 +289,8 @@ body {
   z-index: -1;
 }
 .group3 {
-  position: relative;
+  align-self: end;
+  justify-self: center; 
 }
 .group3::after {
   content: "";
