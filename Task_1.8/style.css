@@ -163,11 +163,6 @@ body {
   max-width: 950px;
   padding: 0 15px;
   margin: 15rem auto 15rem;
-
-  display: grid;
-  grid-template-columns: auto auto;
-
-  position: relative;
 }
 .what_we_do::after {
   content: "";
@@ -195,8 +190,22 @@ body {
   background-position: center;
 }
 
-.what_we_do > h2 {
+.group__grid{
+  position: relative;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas:
+  "group1" 
+  "group2" 
+  "group3";
+  grid-template-rows: 300px 360px;
+}
+.group__grid > h2 {
+  position: absolute;
+  top: 0;
+  left: 0;
   max-width: 400px;
+  grid-area: title;
   font-style: normal;
   font-weight: 500;
   font-size: 3.6rem;
@@ -263,9 +272,9 @@ body {
   padding-right: 0.4rem;
 }
 .group1 {
-  margin-bottom: 110px;
   align-self: start;
-  justify-self: center;
+  justify-self: end;
+  grid-area: group1;
 }
 .group1::after {
   content: "";
@@ -278,9 +287,10 @@ body {
   z-index: -1;
 }
 .group2 {
-  margin-top: -350px;
+  margin-left: 85px;
   align-self: start;
-  justify-self: center;
+  justify-self: left;
+  grid-area: group2;
 }
 .group2::after {
   content: "";
@@ -294,7 +304,8 @@ body {
 }
 .group3 {
   align-self: end;
-  justify-self: center;
+  justify-self: end;
+  grid-area: group3;
 }
 .group3::after {
   content: "";

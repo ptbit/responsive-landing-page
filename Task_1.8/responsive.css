@@ -40,7 +40,7 @@
       "text"
       "img"
       "buttons";
-      max-height: fit-content;
+    max-height: fit-content;
   }
   .left__content {
     grid-area: text;
@@ -61,13 +61,25 @@
     justify-content: center;
     flex-wrap: wrap;
   }
-  .what_we_do {
-    grid-template-columns: auto;
-    margin: 10rem auto 5rem;
+  .group__grid {
+    grid-template-areas:
+      "text"
+      "group1"
+      "group2"
+      "group3";
+    grid-template-rows: auto;
   }
-  .what_we_do > h2 {
-    margin: 0 auto;
+  .group__grid > h2 {
+    grid-area: text;
+    position: relative;
+    max-width: none;
+    text-align: center;
+    max-height: fit-content;
     margin-bottom: 5rem;
+  }
+
+  .what_we_do {
+    margin: 10rem auto 5rem;
   }
   .group {
     padding: 20px;
@@ -78,7 +90,8 @@
     left: 0;
     position: relative;
     margin-bottom: 5rem;
-    margin-top: 0px;
+    margin-left: 0px;
+    justify-self: center;
   }
   .groups {
     margin: 0 auto;
@@ -224,7 +237,7 @@
     min-width: 90%;
     line-height: 6rem;
   }
-  .header__buttons{
+  .header__buttons {
     height: auto;
     margin: 2rem 0;
   }
@@ -274,7 +287,7 @@
   .review__wraper {
     width: 100%;
   }
-  .download__container{
+  .download__container {
     margin: 40px 0 40px;
   }
   .download__logo,
