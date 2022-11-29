@@ -116,8 +116,8 @@
   .footer {
     padding-top: 35px;
   }
-  .avatar__wraper,
-  .review__wraper {
+  .avatar__wrapper,
+  .review__wrapper {
     width: 50%;
   }
   .download__container {
@@ -273,7 +273,7 @@
   .review__text {
     max-width: 100%;
   }
-  .reviev_quote {
+  .review_quote {
     margin-bottom: 4rem;
   }
   .review__autor {
@@ -284,8 +284,8 @@
     display: block;
     text-align: center;
   }
-  .avatar__wraper,
-  .review__wraper {
+  .avatar__wrapper,
+  .review__wrapper {
     width: 100%;
   }
   .download__container {

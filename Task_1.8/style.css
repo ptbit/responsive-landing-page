@@ -191,15 +191,15 @@ body {
   background-position: center;
 }
 
-.group__grid{
+.group__grid {
   position: relative;
   display: grid;
   grid-template-columns: 465px auto;
   grid-template-areas:
-  ". group1"
-  "group2 group1"
-  "group2 group3"
-  ". group3"; 
+    ". group1"
+    "group2 group1"
+    "group2 group3"
+    ". group3";
   grid-template-rows: 295px 290px 290px 295px;
 }
 .group__grid > h2 {
@@ -405,12 +405,12 @@ body {
   height: 155px;
   background-image: url(./assets/wedo/dots.png);
 }
-.avatar__wraper {
+.avatar__wrapper {
   position: relative;
   width: 60%;
   min-height: 400px;
 }
-.avatar__wraper::after {
+.avatar__wrapper::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -422,7 +422,7 @@ body {
   border-radius: 0px 6px 6px 0px;
   z-index: -1;
 }
-.avatar__wraper img {
+.avatar__wrapper img {
   display: block;
   margin: 0 auto;
   max-width: 100%;
@@ -430,21 +430,31 @@ body {
   object-fit: contain;
 }
 
-.review__wraper {
+.review__wrapper {
   width: 40%;
   align-self: center;
 }
-.reviev_quote {
+.review_quote {
   margin-bottom: 40px;
 }
 .review__text {
-  margin-bottom: 40px;
+  min-height: 186px;
+  margin: 110px 0 40px;
   padding-right: 10px;
   font-weight: 400;
   font-size: 1.6rem;
   line-height: 2.4rem;
   color: var(--secondary-text-color);
   opacity: 0.5;
+}
+.review__text::before {
+  content: "";
+  background-image: url(./assets/reviews/quote.svg);
+  display: block;
+  background-repeat: no-repeat;
+  width: 50px;
+  height: 90px;
+  opacity: 1;
 }
 .review__autor {
   font-weight: 500;
