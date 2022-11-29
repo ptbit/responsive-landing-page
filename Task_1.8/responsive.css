@@ -62,6 +62,7 @@
     flex-wrap: wrap;
   }
   .group__grid {
+    grid-template-columns: auto;
     grid-template-areas:
       "text"
       "group1"

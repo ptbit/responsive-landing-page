@@ -163,6 +163,7 @@ body {
   max-width: 950px;
   padding: 0 15px;
   margin: 15rem auto 15rem;
+  position: relative;
 }
 .what_we_do::after {
   content: "";
@@ -193,12 +194,13 @@ body {
 .group__grid{
   position: relative;
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: 465px auto;
   grid-template-areas:
-  "group1" 
-  "group2" 
-  "group3";
-  grid-template-rows: 300px 360px;
+  ". group1"
+  "group2 group1"
+  "group2 group3"
+  ". group3"; 
+  grid-template-rows: 295px 290px 290px 295px;
 }
 .group__grid > h2 {
   position: absolute;
@@ -287,9 +289,8 @@ body {
   z-index: -1;
 }
 .group2 {
-  margin-left: 85px;
   align-self: start;
-  justify-self: left;
+  justify-self: right;
   grid-area: group2;
 }
 .group2::after {
