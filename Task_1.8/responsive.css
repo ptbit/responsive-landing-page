@@ -92,9 +92,9 @@
   .how_it_works {
     padding: 7rem 50px;
   }
-  .reviews__container {
-    margin-top: 50px;
-    margin-bottom: 0px;
+
+  .reviews__title {
+    margin: 50px 0 10px;
   }
   .reviews__content {
     gap: 0 20px;
@@ -273,6 +273,9 @@
   .avatar__wraper,
   .review__wraper {
     width: 100%;
+  }
+  .download__container{
+    margin: 40px 0 40px;
   }
   .download__logo,
   .download_content {
