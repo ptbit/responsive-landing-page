@@ -21,7 +21,7 @@
   .footer__top {
     padding: 0 10px;
   }
-  .bottomn__container {
+  .bottom__container {
     padding: 0 10px;
   }
 }
@@ -272,11 +272,13 @@
   }
   .review__text {
     max-width: 100%;
+    margin: 0 0 15px;
+    min-height: auto;
   }
   .review_quote {
     margin-bottom: 4rem;
   }
-  .review__autor {
+  .review__author {
     margin-bottom: 2rem;
   }
   .reviews__buttons {
