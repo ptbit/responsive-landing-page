@@ -35,32 +35,27 @@
   }
   .header__content {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(auto-fit, 1fr);
+    grid-template-rows: auto 400px auto;
     grid-template-areas:
       "text"
       "img"
       "buttons";
+      max-height: fit-content;
   }
-  .left {
+  .left__content {
     grid-area: text;
-    display: block;
     padding-right: 1.5rem;
+    min-height: 200px;
   }
-  .left h1 {
+  .left__content h1 {
     margin-top: 35px;
   }
   .right {
     grid-area: img;
-    min-height: 300px;
+    min-height: 400px;
   }
   .header__buttons {
     grid-area: buttons;
-  }
-  #buttons1 {
-    display: none;
-  }
-  #buttons2 {
-    display: flex;
     width: 100%;
     gap: 10px;
     justify-content: center;
@@ -181,7 +176,7 @@
   }
   .header__content {
     margin: 0;
-    padding: 15px;
+    padding: 0 15px;
   }
   .burger-lable {
     position: relative;
@@ -231,6 +226,7 @@
   }
   .header__buttons{
     height: auto;
+    margin: 2rem 0;
   }
   .what_we_do {
     padding: 0;
