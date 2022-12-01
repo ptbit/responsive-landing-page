@@ -1,0 +1,312 @@
+@media screen and (max-width: 1440px) {
+  .what_we_do::after,
+  .what_we_do::before,
+  .group1::after,
+  .group2::after,
+  .group3::after,
+  .reviews__content::after {
+    display: none;
+  }
+
+  .how_it_works {
+    padding: 7rem 200px;
+  }
+  .footer__top {
+    gap: 20px;
+  }
+  .footer__logo {
+    margin-right: 20px;
+    padding-left: 10px;
+  }
+  .footer__top {
+    padding: 0 10px;
+  }
+  .bottom__container {
+    padding: 0 10px;
+  }
+}
+/* --------------------------- 1000 ----------------------------- */
+/* --------------------------- 1000 ----------------------------- */
+/* --------------------------- 1000 ----------------------------- */
+/* --------------------------- 1000 ----------------------------- */
+@media screen and (max-width: 1000px) {
+  html {
+    font-size: 8px;
+  }
+  .header__content {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 400px auto;
+    grid-template-areas:
+      "text"
+      "img"
+      "buttons";
+    max-height: fit-content;
+  }
+  .left__content {
+    grid-area: text;
+    padding-right: 1.5rem;
+    min-height: 200px;
+  }
+  .left__content h1 {
+    margin-top: 35px;
+  }
+  .right__content {
+    grid-area: img;
+    min-height: 400px;
+  }
+  .header__buttons {
+    grid-area: buttons;
+    width: 100%;
+    gap: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .group__grid {
+    grid-template-columns: auto;
+    grid-template-areas:
+      "text"
+      "group1"
+      "group2"
+      "group3";
+    grid-template-rows: auto;
+  }
+  .group__grid > h2 {
+    grid-area: text;
+    justify-self: center;
+    position: relative;
+    max-width: none;
+    max-height: fit-content;
+    margin-bottom: 5rem;
+  }
+
+  .what_we_do {
+    margin: 10rem auto 5rem;
+  }
+  .group {
+    padding: 20px;
+  }
+  .group1,
+  .group2,
+  .group3 {
+    left: 0;
+    position: relative;
+    margin-bottom: 5rem;
+    margin-left: 0px;
+    justify-self: center;
+  }
+  .groups {
+    margin: 0 auto;
+  }
+  .group1 .group__logo:first-child {
+    margin-top: -25px;
+  }
+  .group__logo {
+    height: 172px;
+  }
+  .how_it_works {
+    padding: 7rem 50px;
+  }
+
+  .reviews__title {
+    margin: 50px 0 10px;
+  }
+  .reviews__content {
+    gap: 0 20px;
+  }
+  .footer {
+    padding-top: 35px;
+  }
+  .avatar__wrapper,
+  .review__wrapper {
+    width: 50%;
+  }
+  .download__container {
+    margin: 40px 0 90px;
+    gap: 30px;
+  }
+  .footer::before,
+  .footer::after,
+  .footer__logo {
+    display: none;
+  }
+  .links__title {
+    min-width: 84px;
+  }
+}
+/* --------------------------- 700 --------------------------- */
+/* --------------------------- 700 --------------------------- */
+/* --------------------------- 700 --------------------------- */
+/* --------------------------- 700 --------------------------- */
+@media screen and (max-width: 700px) {
+  .how_it_works {
+    padding: 7rem 25px;
+  }
+  .review__btn {
+    height: 70px;
+  }
+  .download__container {
+    flex-direction: column;
+  }
+  .download__logo {
+    margin: 0 auto;
+    width: 80%;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .download__text {
+    max-width: 100%;
+  }
+  .download_content {
+    width: 80%;
+    padding: 0 1.5rem;
+  }
+  .footer__top {
+    flex-direction: column;
+  }
+  .list__item {
+    font-size: 1.6rem;
+  }
+  .newsletter {
+    max-width: 100%;
+  }
+  .newsletter__form {
+    margin-bottom: 20px;
+  }
+  .newsletter__form input {
+    width: 100%;
+    padding: 5px 5px 5px 15px;
+    font-size: 1.6rem;
+  }
+  .newsletter__form button {
+    width: 100%;
+  }
+}
+/* --------------------------- BURGER MENU --------------------------- */
+/* --------------------------- BURGER MENU --------------------------- */
+/* --------------------------- BURGER MENU --------------------------- */
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 7px;
+  }
+  .header__content {
+    margin: 0;
+    padding: 0 15px;
+  }
+  .burger-lable {
+    position: relative;
+    top: -10px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    color: var(--main-blue-color);
+    cursor: pointer;
+  }
+  .burger-lable::after {
+    content: "☰";
+    font-size: 45px;
+    width: 40px;
+    height: 40px;
+  }
+  .menu__list,
+  #burger {
+    display: none;
+  }
+  #burger:checked ~ .menu__list {
+    display: block;
+    line-height: 50px;
+    flex-direction: column;
+    position: absolute;
+    top: 74px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #deecf7;
+    font-size: 3rem;
+  }
+  #burger:checked ~ .burger-lable::after {
+    content: "✖";
+  }
+  .menu__link {
+    padding: 15px;
+    text-align: center;
+    border-top: 2px dotted var(--main-blue-color);
+  }
+  .menu__link:hover {
+    background-color: rgba(95, 180, 236, 0.384);
+  }
+  .left h1 {
+    min-width: 90%;
+    line-height: 6rem;
+  }
+  .header__buttons {
+    height: auto;
+    margin: 2rem 0;
+  }
+  .what_we_do {
+    padding: 0;
+    margin: 5rem auto 5rem;
+  }
+  .what_we_do > h2 {
+    padding: 0 10px;
+  }
+  .group {
+    min-width: 90%;
+    min-height: 370px;
+  }
+  .group__content {
+    margin: 15px;
+  }
+  .group__content > p {
+    margin-bottom: 2rem;
+  }
+  .steps {
+    flex-direction: column;
+  }
+  .step {
+    max-width: 100%;
+  }
+  .reviews__content {
+    flex-direction: column;
+    padding: 0 20px;
+    gap: 20px;
+  }
+  .review__text {
+    max-width: 100%;
+    margin: 0 0 15px;
+    min-height: auto;
+  }
+  .review_quote {
+    margin-bottom: 4rem;
+  }
+  .review__author {
+    margin-bottom: 2rem;
+  }
+  .reviews__buttons {
+    position: static;
+    display: block;
+    text-align: center;
+  }
+  .avatar__wrapper,
+  .review__wrapper {
+    width: 100%;
+  }
+  .download__container {
+    margin: 40px 0 40px;
+  }
+  .download__logo,
+  .download_content {
+    width: 100%;
+  }
+  .newsletter > p {
+    font-size: 2rem;
+  }
+  .newsletter__form button {
+    margin-bottom: 10px;
+  }
+  .list__item {
+    font-size: 1.8rem;
+  }
+  .list__item {
+    line-height: 1.5rem;
+  }
+}
