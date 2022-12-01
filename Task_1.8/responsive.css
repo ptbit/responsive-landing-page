@@ -72,9 +72,9 @@
   }
   .group__grid > h2 {
     grid-area: text;
+    justify-self: center;
     position: relative;
     max-width: none;
-    text-align: center;
     max-height: fit-content;
     margin-bottom: 5rem;
   }

@@ -198,18 +198,17 @@ body {
   display: grid;
   grid-template-columns: 465px auto;
   grid-template-areas:
-    ". group1"
+    "text group1"
     "group2 group1"
     "group2 group3"
     ". group3";
   grid-template-rows: 295px 290px 290px 295px;
 }
 .group__grid > h2 {
-  position: absolute;
-  top: 0;
-  left: 0;
+  grid-area: text;
+  align-self: start;
+  justify-self: left;
   max-width: 400px;
-  grid-area: title;
   font-style: normal;
   font-weight: 500;
   font-size: 3.6rem;
