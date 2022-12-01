@@ -50,7 +50,7 @@
   .left__content h1 {
     margin-top: 35px;
   }
-  .right {
+  .right__content {
     grid-area: img;
     min-height: 400px;
   }
