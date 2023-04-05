@@ -78,7 +78,10 @@
     max-height: fit-content;
     margin-bottom: 5rem;
   }
-
+  .group button > span{
+    align-self: center;
+    font-size: 1.8rem;
+  }
   .what_we_do {
     margin: 10rem auto 5rem;
   }
@@ -138,6 +141,9 @@
 /* --------------------------- 700 --------------------------- */
 /* --------------------------- 700 --------------------------- */
 @media screen and (max-width: 700px) {
+  .group__grid h2{
+    padding: 0 15px;
+  }
   .how_it_works {
     padding: 7rem 25px;
   }
@@ -153,12 +159,18 @@
     margin-bottom: 20px;
     text-align: center;
   }
+  .download__logo img{
+    max-width: 95%;
+  }
   .download__text {
     max-width: 100%;
   }
   .download_content {
     width: 80%;
     padding: 0 1.5rem;
+  }
+  .download__buttons{
+    height: auto;
   }
   .footer__top {
     flex-direction: column;

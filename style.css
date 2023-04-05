@@ -27,6 +27,9 @@ a {
   text-decoration: none;
   color: inherit;
 }
+button {
+  cursor: pointer;
+}
 ul {
   list-style: none;
 }
@@ -257,12 +260,12 @@ body {
   margin-bottom: 6.2rem;
 }
 .group button {
+  display: flex;
   width: 127px;
   height: 30px;
   border: 0;
   background-color: transparent;
   text-align: left;
-  cursor: pointer;
 }
 .group button > span {
   font-weight: 500;
@@ -471,23 +474,31 @@ body {
   border: 0;
   padding: 20px;
 }
-.btn-back {
+
+.btn-back,
+.btn-forward:active {
   background: var(--main-blue-color);
   border-radius: 4px 0px 0px 4px;
   background-image: url("./assets/reviews/arrow-left-white.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
-.btn-forward {
+.btn-forward,
+.btn-back:active {
   background-color: #ffffff;
-
   background-image: url("./assets/reviews/arrow-right-blue.svg");
   background-repeat: no-repeat;
   background-position: center;
-
   box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.08);
   border-radius: 4px;
 }
+.btn-back:active {
+  transform: rotate(180deg);
+}
+.btn-forward:active {
+  transform: rotate(180deg);
+}
+
 /******************** download *******************/
 /******************** download *******************/
 /******************** download *******************/
@@ -658,7 +669,12 @@ body {
   border: 0;
   border-radius: 3px;
 }
-
+.newsletter__form button:active {
+  color: #ffffff;
+  background: var(--main-blue-color);
+  border: 3px solid #ffffff;
+  transition: all 0.1s ease-out;
+}
 .footer__bottom {
   max-width: 1192px;
   width: 100%;
@@ -673,6 +689,7 @@ body {
   align-items: center;
 }
 .footer__socials {
+  margin-right: 10px;
   max-width: 134px;
   width: 100%;
   display: flex;
@@ -681,7 +698,7 @@ body {
 }
 .footer__socials li > a {
   display: block;
-  height: 16px;
+  height: 17px;
 }
 .youtube {
   width: 23px;
