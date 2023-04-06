@@ -12,7 +12,7 @@ To view demo: **[click here](https://ptbit.github.io/responsive-landing-page/)**
 ⚡️ Valid HTML5 & CSS3\
 ⚡️ Well organized documentation\
 ⚡️ Semantic Markup\
-⚡️ Custom font (no Google Fonts)\
+⚡️ Custom font (no Google Fonts)
 
 ### Technologies used: 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
