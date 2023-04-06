@@ -78,7 +78,7 @@
     max-height: fit-content;
     margin-bottom: 5rem;
   }
-  .group button > span{
+  .group button > span {
     align-self: center;
     font-size: 1.8rem;
   }
@@ -141,8 +141,9 @@
 /* --------------------------- 700 --------------------------- */
 /* --------------------------- 700 --------------------------- */
 @media screen and (max-width: 700px) {
-  .group__grid h2{
+  .group__grid h2 {
     padding: 0 15px;
+    text-align: center;
   }
   .how_it_works {
     padding: 7rem 25px;
@@ -159,7 +160,7 @@
     margin-bottom: 20px;
     text-align: center;
   }
-  .download__logo img{
+  .download__logo img {
     max-width: 95%;
   }
   .download__text {
@@ -169,7 +170,7 @@
     width: 80%;
     padding: 0 1.5rem;
   }
-  .download__buttons{
+  .download__buttons {
     height: auto;
   }
   .footer__top {
@@ -204,7 +205,7 @@
     margin: 0;
     padding: 0 15px;
   }
-  .burger-lable {
+  .burger-label {
     position: relative;
     top: -10px;
     display: block;
@@ -213,7 +214,7 @@
     color: var(--main-blue-color);
     cursor: pointer;
   }
-  .burger-lable::after {
+  .burger-label::after {
     content: "☰";
     font-size: 45px;
     width: 40px;
@@ -235,7 +236,7 @@
     background-color: #deecf7;
     font-size: 3rem;
   }
-  #burger:checked ~ .burger-lable::after {
+  #burger:checked ~ .burger-label::after {
     content: "✖";
   }
   .menu__link {
