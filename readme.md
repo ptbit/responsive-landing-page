@@ -5,8 +5,11 @@
 
 To view demo: **[click here](https://ptbit.github.io/responsive-landing-page/)** 
 
+### Description:
+It was finally task of the course HTML & CSS. I must create responsive landing page from Figma project without using JS.
 
 ### Feature:
+⚡️ Base on FIGMA project\
 ⚡️ Modern UI Design\
 ⚡️ Fully Responsive\
 ⚡️ Valid HTML5 & CSS3\
